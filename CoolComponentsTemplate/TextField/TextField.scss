@@ -1,0 +1,32 @@
+@import '../../../style/variables.scss';
+
+.text-field{
+    display: flex;
+    flex-direction: column;
+    transition: all 0,2s ease-in;
+    >label{
+        color:black;
+        font-weight: 600;
+        margin-bottom: 10px;
+        transition: all 0,2s ease-in;
+
+    }
+    .MuiTextField-root{
+        transition: all 0,2s ease-in;
+
+        fieldset{
+            border: 2px solid $colorPrimary;
+            border-radius: 8px;
+        }
+    }
+
+    &.grey{
+        .MuiTextField-root{
+            background-color: #f7f7f7;
+            border-radius: 16px;
+            fieldset{
+                border: none
+            }
+        }
+    }
+}

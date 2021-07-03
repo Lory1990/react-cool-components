@@ -1,0 +1,74 @@
+.dropzone{
+    .drop-area{
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #FAFAFA;
+        border: 2px dashed #9b9ca7;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .dropzone-list{
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+
+        .single-dropzone-file{
+            background-color: #E7FAFF;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: row;
+            padding: 4px 15px 4px 4px;
+            cursor: pointer;
+
+            .message-icon{
+                border-radius: 16px;
+                background-color: #A0D7E7;
+                padding: 15px;
+                margin-right: 16px;
+            }
+
+            .label-space{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .label{
+                    color: #5F75EE;
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+
+                .file-dimension{
+                    color: #11142D;
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+
+            }
+
+            .delete-space{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button{
+                    min-width: 0px;
+                    min-height: 0px;
+                    padding: 2px;
+                    margin-left: 12px;
+
+                    svg{
+                        max-width: 36px;
+                        max-height: 36px;
+                        min-width: 36px;
+                        min-height: 36px;
+                    }
+                }
+            }
+        }
+    }
+}

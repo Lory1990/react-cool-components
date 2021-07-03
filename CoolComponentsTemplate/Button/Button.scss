@@ -1,0 +1,25 @@
+button.standard-button{
+    box-shadow: none;
+    border-radius: 16px;
+    padding: 14px 46px;
+    span.MuiButton-label{
+        text-transform: none;
+        size: 14px;
+    }
+
+    &:hover{
+        box-shadow: none;
+    }
+
+}
+
+button.black-button{
+    background-color: #1B1D21;
+    span.MuiButton-label{
+        color: white;
+    }
+
+    &:hover{
+        background-color: lighten(#1B1D21, 20%);
+    }
+}

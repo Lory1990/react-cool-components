@@ -1,0 +1,113 @@
+@import '../../../style/variables.scss';
+
+
+
+
+.color-picker{
+    display: flex;
+    flex-direction: column;
+    >label{
+        color:black;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .MuiOutlinedInput-root{
+
+        fieldset{
+            border: 2px solid $colorPrimary;
+            border-radius: 8px;
+        }
+    }
+}
+
+.picker__container__element{
+    min-width: 58px !important;
+    min-height: 56px;
+    margin-top: 12px;
+    margin-left: 0;
+    border-radius: 16px;
+}
+
+.picker{
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.picker:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: all 0.2s ease-in;
+}
+
+
+
+.picker__element__first{
+    min-width: 58px !important;
+    min-height: 56px;
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 16px;
+    background-color: "#E4E4E4";
+}
+
+.hide{
+    opacity: 0;
+    transform: translateY(-20px) scale(0.7) rotate(12deg);
+    transition: all 0.2s ease-in;
+}
+
+.show{
+    opacity: 1;
+    transition: all 0.2s ease-in;
+
+}
+
+.show--0{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+
+    transition: all 0.2s ease-in;
+}
+
+.show--1{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition: all 0.2s ease-in;
+    transition-delay: 50ms;
+}
+
+.show--2{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+
+    transition: all 0.2s ease-in;
+    transition-delay: 100ms;
+
+}
+
+.show--3{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+
+    transition: all 0.2s ease-in;
+    transition-delay: 150ms;
+
+}
+.show--4{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+
+    transition: all 0.2s ease-in;
+    transition-delay: 200ms;
+
+}
+
+.show--5{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+
+    transition: all 0.2s ease-in;
+    transition-delay: 250ms;
+
+}
+
