@@ -9,11 +9,15 @@ module.exports = {
     "@storybook/preset-create-react-app"
   ],
   webpackFinal: async (config, { configType }) => {
-    config.output.publicPath = '/react-cool-components/';
+    if(process.env.NODE_ENV === 'production'){
+      config.output.publicPath = '/react-cool-components/';
+    }
     return config;
   },
   managerWebpack: async (config) => {
-    config.output.publicPath = '/react-cool-components/';
+    if(process.env.NODE_ENV === 'production'){
+      config.output.publicPath = '/react-cool-components/';
+    }
     return config;
   },
 }
