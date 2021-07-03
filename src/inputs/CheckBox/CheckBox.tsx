@@ -9,10 +9,10 @@ export interface ICheckBoxProps extends CheckboxProps, IFormProps, ITooltipProps
     label?: string,
 }
 
-export default function  CheckboxComponent({onChange, id, disabled, label, name, value, className} : ICheckBoxProps){
+export default function  CheckboxComponent({onChange, id, disabled, label, name, value, className, error, warning, readOnly, success} : ICheckBoxProps){
 
     return(<FormControlLabel 
-        className={classnames(style.checkbox, className, {disabled})}
+        className={classnames(style.checkbox, className, {disabled, error, warning, readOnly, success})}
         control={
             <>
                 <Checkbox
