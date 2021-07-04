@@ -1,8 +1,19 @@
+import { ReactNode } from "react";
+
 export interface ITooltipData{
-    title?: string,
+    /**
+     * Tooltip title, can be a string or react node
+     */
+    title?: string | ReactNode,
+    /**
+     * Tooltip type
+     */
     type?: "INFO" | "WARNING" | "ERROR" | "SUCCESS",
 }
 
 export default interface ITooltipProps{
-    tooltip : ITooltipData
+    /**
+     * Tooltip data for the field
+     */
+    tooltip?: ITooltipData
 }

@@ -6,8 +6,8 @@ export default {
     component: CheckBox,
 } as Meta
 
-export const Template = (args : ICheckBoxProps) => <CheckBox {...args} />;
+export const Plain = (args : ICheckBoxProps) => <CheckBox {...args} />;
 
-Template.args = {
-    label: 'CheckBox Label' 
+Plain.args = {
+    
 };

@@ -12,7 +12,6 @@ export default function CheckBoxFormik(props : ICheckBoxFormikProps){
 
     return <CheckBox
         {...props}
-        name={props.name}
         error={meta.error}
         value={field.value}
         disabled={isSubmitting || props.disabled}
