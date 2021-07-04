@@ -6,6 +6,7 @@ import {ReactComponent as FeatureNo } from '@assets/img/feature-no.svg'
 import { Button } from "@material-ui/core";
 
 export interface ISubscriptionCardProps{
+    htmlId?: string,
     id?:string,
     mostConvenient?: boolean,
     className?: string,
@@ -30,7 +31,7 @@ export interface ISubscriptionCardProps{
 
 export function SingleSubscriptionCard(props : ISubscriptionCardProps) {
   
-    const {description, features, labels, price, mostConvenient, className, title, typology, paymentFrequency, id, onBuyNowClick } = props
+    const {htmlId, description, features, labels, price, mostConvenient, className, title, typology, paymentFrequency, id, onBuyNowClick } = props
 
     const realLabels = {
         mostConvenient: "Più conveniente",
@@ -48,7 +49,7 @@ export function SingleSubscriptionCard(props : ISubscriptionCardProps) {
   },[price])
   
   return (
-    <div className={classnames("subscription-card", className, style.subscriptionCard, {[style.mostConvenient]: mostConvenient})}>
+    <div className={classnames("subscription-card", className, style.subscriptionCard, {[style.mostConvenient]: mostConvenient})} id={htmlId}>
       {mostConvenient && <span className={style.badge}>{realLabels.mostConvenient}</span>}
         <div className={classnames(style.cardHead, "card-head")}>            
               <h2 className={classnames(style.title, "title")}>{title}</h2>
