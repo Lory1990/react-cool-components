@@ -23,18 +23,12 @@ $boxShadowB: #083e39;
     padding: 0;
     margin: 0;
     color: black;
-    font-weight: bold;
     font-size: 18px;
     text-align: left;
     text-transform: capitalize;
-    padding-bottom: 0px;
-    text-align: left;
   }
 
-  .paymentFrequency {
-    font-size: 18px;
-    margin-left: 5px;
-  }
+  
 
   .badge {
     position: absolute;
@@ -51,9 +45,11 @@ $boxShadowB: #083e39;
 
 
   .titleFeatures {
+    margin-top: 43px;
     color: black;
+    font-weight: 700;
     font-size: 16px;
-    text-align: left !important;
+    text-align: left;
   }
 
   .price {
@@ -65,24 +61,19 @@ $boxShadowB: #083e39;
 
   .priceValue {
     font-weight: bold;
+    font-size: 40px;
   }
 
-  .price-renewal-wrapper {
-    //display: flex;
-    color: #000;
-    font-size: 40px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    line-height: 1;
+  .paymentFrequency {
+    font-size: 18px;
+    margin-left: 5px;
   }
+
   .productPrice {
     background: $primaryColor;
     border: 2px solid $primaryColor;
     color: $secondaryColor;
     padding: 5px 18px;
-    margin-top: 30px;
     min-height: 50px;
     text-align: center;
     display: inline-block;
