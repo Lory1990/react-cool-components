@@ -94,7 +94,7 @@ export function SingleSubscriptionCard(props: ISubscriptionCardProps) {
         <div className={classnames(style.titleFeatures, "title-features")}>{realLabels.features}:</div>
         <ul className={classnames(style.listFeatures, "list-features")}>
           {Array.isArray(features) && features.map((feature, index: number) =>
-            <div key={index} className={classnames(style.singleFeature, "single-feature")}> {feature.included ? <FeatureYes /> : <FeatureNo />} <li>{feature.text}</li></div>
+            <li key={index} className={classnames(style.singleFeature, "single-feature")}> {feature.included ? <FeatureYes /> : <FeatureNo />} <span className={classnames('feature-text', style.featureText)}>{feature.text}</span></li>
           )}
         </ul>
     </div>

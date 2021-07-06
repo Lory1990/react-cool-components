@@ -1,8 +1,8 @@
 import { FormHelperText, TextField, TextFieldProps } from '@material-ui/core'
 import classnames from 'classnames'
 import _ from 'lodash'
-import ITooltipProps from '@interfaces/ITooltipProps'
-import IFormProps from '@interfaces/IFormProps'
+import ITooltipProps from 'interfaces/ITooltipProps'
+import IFormProps from 'interfaces/IFormProps'
 import style from './TextInput.module.scss'
 
 export type ITextInputProps  = IFormProps & TextFieldProps & ITooltipProps & {

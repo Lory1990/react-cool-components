@@ -109,21 +109,24 @@ $boxShadowB: #083e39;
 
   .listFeatures {
     justify-content: center;
+    padding-left: 15px;
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
+
   }
 
   .singleFeature {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    
     > svg {
       margin-right: 13px;
     }
-    margin-bottom: 5px;
-    &:last-of-type {
-      margin-bottom: 0px;
+    
+    &:not(:last-of-type) {
+      margin-bottom: 7px;
     }
 
     li {
@@ -132,12 +135,12 @@ $boxShadowB: #083e39;
     }
   }
 
-  &.most-convenient {
+  &.mostConvenient {
     background-color: #fff;
     transform: translateY(-20px);
     padding-top: 70px;
-    .price-value {
-      color: $boxShadowA;
+    .priceValue {
+      color: $primaryColor;
     }
   }
 }
