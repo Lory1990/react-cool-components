@@ -6,10 +6,12 @@ import classnames from 'classnames'
 
 export default function ErrorAndWarningHelperText(props : IFormProps){
 
-    const {error, warning, showErrorMessage = true, showWarningMessage = true } = props
+    const {errorMessage, warningMessage, showErrorMessage = true, showWarningMessage = true } = props
+
+    if(!errorMessage && !warningMessage) return <></>
 
     return <div className={classnames(style.errorAndWarningHelperText, 'error-and-warning-wrapper')}>
-        {error && showErrorMessage && <FormHelperText className={classnames(style.errorText, 'error-text')}>{error}</FormHelperText>}
-        {warning && showWarningMessage && <FormHelperText className={classnames(style.warningText, 'warning-text')}>{warning}</FormHelperText>}
+        {errorMessage && showErrorMessage && <FormHelperText className={classnames(style.errorText, 'error-text')}>{errorMessage}</FormHelperText>}
+        {warningMessage && showWarningMessage && <FormHelperText className={classnames(style.warningText, 'warning-text')}>{warningMessage}</FormHelperText>}
     </div>
 }

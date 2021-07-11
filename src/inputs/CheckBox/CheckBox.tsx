@@ -9,10 +9,10 @@ import style from './CheckBox.module.scss';
 export interface ICheckBoxProps extends IFormProps, ITooltipProps, CheckboxProps{
 }
 
-export function  CheckboxComponent({onChange, id, disabled, label, name, value, className, error, warning, readOnly, success} : ICheckBoxProps){
+export function  CheckboxComponent({onChange, id, disabled, label, name, value, className, errorMessage, warningMessage, readOnly, success} : ICheckBoxProps){
 
     return(<FormControlLabel 
-        className={classnames(style.checkbox, className, {disabled, error, warning, readOnly, success})}
+        className={classnames(style.checkbox, className, {disabled, errorMessage, warningMessage, readOnly, success})}
         control={
             <>
                 <Checkbox

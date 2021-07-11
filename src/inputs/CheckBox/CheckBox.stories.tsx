@@ -2,7 +2,7 @@ import { Meta } from '@storybook/react';
 import CheckBox, { ICheckBoxProps } from './CheckBox';
 
 export default {
-    title: "Components/CheckBox",
+    title: "Inputs/CheckBox",
     component: CheckBox,
 } as Meta
 

@@ -12,7 +12,7 @@ export default function CheckBoxFormik(props : ICheckBoxFormikProps){
 
     return <CheckBox
         {...props}
-        error={meta.error}
+        errorMessage={meta.error}
         value={field.value}
         disabled={isSubmitting || props.disabled}
         onChange={(e,checked)=>{

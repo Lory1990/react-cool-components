@@ -1,20 +1,26 @@
-export default interface IFormProps{
+import React, { ReactNode } from "react";
+
+export default interface IFormProps {
+    /**
+     * 
+     */
+    name? :string
     /**
      * Component label
      */
-    label?: string,
+    label?: string | ReactNode,
     /**
      * Error message
      * 
      * @default undefined
      */
-    error?: string,
+    errorMessage?: string,
     /**
      * Warning message
      * 
      * @default undefined
      */
-    warning?: string,
+    warningMessage?: string,
     /**
      * If is success or not
      * 
@@ -38,5 +44,10 @@ export default interface IFormProps{
      * 
      * @default true
      */
-    showErrorMessage?: boolean
+    showErrorMessage?: boolean,
+    /**
+     * Set to true to enable read only mode
+     * 
+     */
+    readOnly?: boolean
 }

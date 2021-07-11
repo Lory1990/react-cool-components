@@ -2,7 +2,7 @@ import { Meta } from '@storybook/react';
 import TextInput, { ITextInputProps } from './TextInput'
 
 export default {
-    title: 'Components/TextInput',
+    title: 'Inputs/TextInput',
     component: TextInput,
 } as Meta;
   
