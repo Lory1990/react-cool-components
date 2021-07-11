@@ -4,7 +4,7 @@ Here is another cool UI React Library made on top of [React Material UI](https:/
 
 This is a project made incollabortion with [ReadTheFuckingManual](https://readthefmanual.it) and [Tongy](https://www.tongy.it/)
 
-# Before going on see the Demo
+# Before going on ➡️ see the Demo
 
 <div align='center'>
     <a href='https://lory1990.github.io/react-cool-components/'>🚀Demo🚀</a>
