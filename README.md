@@ -7,7 +7,7 @@ This is a project made incollabortion with [ReadTheFuckingManual](https://readth
 # Before going on see the Demo
 
 <div align='center'>
-    [https://lory1990.github.io/react-cool-components/](https://lory1990.github.io/react-cool-components/)
+    <a href='https://lory1990.github.io/react-cool-components/'>🚀Demo🚀</a>
 </div>
 
 # Run
