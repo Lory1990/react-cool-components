@@ -1,10 +1,9 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import classnames from "classnames";
 import style from "./SubscriptionCard.module.scss";
 import { ReactComponent as FeatureYes } from 'assets/img/feature-yes.svg'
 import { ReactComponent as FeatureNo } from 'assets/img/feature-no.svg'
 import { Button } from "@material-ui/core";
-import GeneralStyle from "ui/GeneralStyle/GeneralStyle";
 
 export enum SubscriptionCardTypology {
   STANDARD = "STANDARD",
@@ -66,7 +65,6 @@ export function SingleSubscriptionCard(props: ISubscriptionCardProps) {
   }, [price])
 
   return (
-    <GeneralStyle>
     <div className={classnames("subscription-card", className, style.subscriptionCard, { [style.mostConvenient]: mostConvenient })} id={htmlId}>
       {mostConvenient && <span className={style.badge}>{realLabels.mostConvenient}</span>}
         <h2 className={classnames(style.title, "title")}>{title}</h2>
@@ -98,7 +96,6 @@ export function SingleSubscriptionCard(props: ISubscriptionCardProps) {
           )}
         </ul>
     </div>
-    </GeneralStyle>
   );
 }
 

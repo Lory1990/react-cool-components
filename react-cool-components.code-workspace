@@ -1,0 +1,23 @@
+{
+	"folders": [
+	  {
+		"path": "."
+	  },
+	],
+	"launch": {
+	  "configurations": [
+		{
+		  "name": "Debug Storybook",
+		  "type": "chrome",
+		  "request": "launch",
+		  "url": "http://localhost:6006",
+		  "webRoot": "./src"
+		}
+	  ]
+	},
+	"settings": {
+	  "editor.formatOnSave": true,
+	  "editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+  }
+  

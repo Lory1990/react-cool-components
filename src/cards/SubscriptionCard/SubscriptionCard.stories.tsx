@@ -1,9 +1,16 @@
 import { Meta } from '@storybook/react';
 import SubscriptionCard, { ISubscriptionCardProps, SubscriptionCardTypology } from './SubscriptionCard'
+import { getStoryPath } from 'utils/FileUtils';
+import { baseAbsolute, file, wd } from 'paths.macro';
 
 export default {
     title: 'Cards/SubscriptionCard',
     component: SubscriptionCard,
+    parameters: {
+      storySource: {
+        storyPath:getStoryPath(baseAbsolute, wd, file)
+      },
+    }
 } as Meta;
   
 export const Standard = (args: ISubscriptionCardProps) => {
