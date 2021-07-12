@@ -10,18 +10,18 @@ import style from './Select.module.scss'
 
 
 export interface ISelectComponentProps extends IFormProps, ITooltipProps, SelectProps{
-    value:string,
-    values: Record<string, unknown>[]
-    textValue:string | ((textValue: Record<string, unknown>) => string),
-    keyValue:string | ((textValue: Record<string, unknown>) => string),
-    disabledValue: string | ((textValue: Record<string, unknown>) => boolean),
-    onChange: (event: React.ChangeEvent<{ name?: string; value: unknown }>, child: React.ReactNode ) => void,
-    filter: ((value: Record<string, unknown>, index: number) => boolean),
-    renderSingle: ((value: Record<string, unknown>, index: number, realValue: string, realKey: string) => React.ReactNode),
+    value?:string,
+    values?: Record<string, unknown>[]
+    textValue?:string | ((textValue: Record<string, unknown>) => string),
+    keyValue?:string | ((textValue: Record<string, unknown>) => string),
+    disabledValue?: string | ((textValue: Record<string, unknown>) => boolean),
+    onChange?: (event: React.ChangeEvent<{ name?: string; value: unknown }>, child: React.ReactNode ) => void,
+    filter?: ((value: Record<string, unknown>, index: number) => boolean),
+    renderSingle?: ((value: Record<string, unknown>, index: number, realValue: string, realKey: string) => React.ReactNode),
    
 }
 
-export default function SelectComponent(props : ISelectComponentProps){
+export function SelectComponent(props : ISelectComponentProps){
 
     // Estrae il value - testo
     const extractValue = (value: Record<string, unknown>) : string => {
@@ -126,3 +126,5 @@ export default function SelectComponent(props : ISelectComponentProps){
             </InputFieldWrapper>
     )
 }
+
+export default SelectComponent

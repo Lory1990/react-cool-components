@@ -18,5 +18,15 @@ export default {
   }
 
   Plain.args = {
-    label: "La mia label"
+    label: "Select a fruit",
+    values:[
+      {
+        key: "apple",
+        value: "apple",
+      },
+      {
+        key: "pear",
+        value: "pear",
+      }
+    ]
   }  as ISelectComponentProps
