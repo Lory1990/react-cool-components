@@ -1,32 +1,33 @@
 import classnames from 'classnames'
-import Button from '../Button/Button'
 import _ from 'lodash'
-import './ButtonArray.scss'
-import { ReactNode } from 'react'
+import Button from '../Button/Button'
+import style from './ButtonArray.module.scss'
 
-
-export interface IButtonArray{
-    button: ReactNode,
-    isSelected: boolean,
-    selected: {};
-    setSelected: 
-    buttons:ReactNode[]
+export interface IButtonData{
+    id: string,
+    label: string,
 }
 
-export default function ButtonArray(props: IButtonArray){
+export interface IButtonArrayProps{
+    selected: string[];
+    setSelected: (button: IButtonData, isSelected: boolean, event:React.FormEvent<HTMLInputElement>) => void
+    buttons:IButtonData[]
+}
+
+export function ButtonArray(props: IButtonArrayProps){
 
     const { selected, setSelected, buttons } = props
 
-    const setSelectedButton = (button: ReactNode, isSelected: boolean) => (event:React.FormEvent<HTMLInputElement>) =>{
-        setSelected && setSelected(button, !isSelected, event)
+    const setSelectedButton = (button: IButtonData, isSelected: boolean) => (event:React.FormEvent<HTMLInputElement>) =>{
+        setSelected?.(button, !isSelected, event)
     }
 
-    return <div className='button-array'>
+    return <div className={classnames(style.buttonArray, 'button-array')}>
         {_.map(buttons,(button, index)=>{
             const isSelected = selected && selected.includes(button.id)
             return <Button 
                 key={index}
-                className={classnames('button-array-item', {isSelected})}
+                className={classnames('button-array-item',style.buttonArrayItem, {isSelected: style.isSelected})}
                 onClick={setSelectedButton(button, isSelected)}
             >
                 {button.label}
@@ -36,3 +37,5 @@ export default function ButtonArray(props: IButtonArray){
 
 
 }
+
+export default ButtonArray

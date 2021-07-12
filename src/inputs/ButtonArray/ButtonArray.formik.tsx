@@ -4,7 +4,7 @@ import ButtonArray from "./ButtonArray";
 import _ from 'lodash'
 
 
-export default function ButtonArrayFormik(props){
+export default function ButtonArrayFormik(props : any){
 
     const [field, meta, helpers] = useField(props.name);
     const { isSubmitting } = useFormikContext()

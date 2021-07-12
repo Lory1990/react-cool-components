@@ -1,0 +1,10 @@
+
+.buttonArray{
+    .buttonArrayItem{
+        
+        &.isSelected{
+            background-color: $primaryColor;
+            color: $primaryColorText;
+        }
+    }
+}
