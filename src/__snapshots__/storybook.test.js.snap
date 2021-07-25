@@ -1,0 +1,679 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Buttons/Button Array Plain 1`] = `
+<div
+  className="buttonArray button-array"
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem isSelected standardButton standard-button"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      First button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem isSelected standardButton standard-button"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Second button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Buttons/Button Contained 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained standardButton standard-button"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/Button Contained Primary 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained standardButton standard-button MuiButton-containedPrimary"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/Button Contained Secondary 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained standardButton standard-button MuiButton-containedSecondary"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/Button Plain 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-text standardButton standard-button"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Cards/SubscriptionCard Most Convenient 1`] = `
+<div
+  className="subscription-card subscriptionCard mostConvenient"
+>
+  <span
+    className="badge"
+  >
+    Più conveniente
+  </span>
+  <h2
+    className="title title"
+  >
+    Sottoscrizione
+  </h2>
+  <div
+    className="price price"
+  >
+    <span
+      className="priceValue price-value"
+    >
+      €
+       
+      10
+    </span>
+    <span
+      className="paymentFrequency payment-frequency"
+    >
+      /2 mesi
+    </span>
+  </div>
+  <div
+    className="titleFeatures title-features"
+  >
+    Caratteristiche
+    :
+  </div>
+  <ul
+    className="listFeatures list-features"
+  >
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-yes.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 1
+      </span>
+    </li>
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-yes.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 2
+      </span>
+    </li>
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-no.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 3
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Cards/SubscriptionCard Package 1`] = `
+<div
+  className="subscription-card subscriptionCard"
+>
+  <h2
+    className="title title"
+  >
+    Sottoscrizione
+  </h2>
+  <div
+    className="price price"
+  >
+    <span
+      className="priceValue price-value"
+    >
+      €
+       
+      10
+    </span>
+    <span
+      className="paymentFrequency payment-frequency"
+    >
+      
+    </span>
+  </div>
+  <div
+    className="titleFeatures title-features"
+  >
+    Caratteristiche
+    :
+  </div>
+  <ul
+    className="listFeatures list-features"
+  >
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-yes.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 1
+      </span>
+    </li>
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-yes.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 2
+      </span>
+    </li>
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-no.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 3
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Cards/SubscriptionCard Standard 1`] = `
+<div
+  className="subscription-card subscriptionCard"
+>
+  <h2
+    className="title title"
+  >
+    Sottoscrizione
+  </h2>
+  <div
+    className="price price"
+  >
+    <span
+      className="priceValue price-value"
+    >
+      €
+       
+      10
+    </span>
+    <span
+      className="paymentFrequency payment-frequency"
+    >
+      /2 mesi
+    </span>
+  </div>
+  <div
+    className="titleFeatures title-features"
+  >
+    Caratteristiche
+    :
+  </div>
+  <ul
+    className="listFeatures list-features"
+  >
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-yes.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 1
+      </span>
+    </li>
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-yes.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 2
+      </span>
+    </li>
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-no.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 3
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Inputs/CheckBox Plain 1`] = `
+<label
+  className="MuiFormControlLabel-root checkbox"
+>
+  <span
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={null}
+  >
+    <span
+      className="MuiIconButton-label"
+    >
+      <input
+        checked={false}
+        className="PrivateSwitchBase-input-4"
+        data-indeterminate={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+        />
+      </svg>
+    </span>
+  </span>
+  <span
+    className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+  >
+    This is the checkbox
+  </span>
+</label>
+`;
+
+exports[`Storyshots Inputs/CheckBox With Error And Warning 1`] = `
+<label
+  className="MuiFormControlLabel-root checkbox"
+>
+  <span
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-9 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={null}
+  >
+    <span
+      className="MuiIconButton-label"
+    >
+      <input
+        checked={false}
+        className="PrivateSwitchBase-input-12"
+        data-indeterminate={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+        />
+      </svg>
+    </span>
+  </span>
+  <span
+    className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+  />
+</label>
+`;
+
+exports[`Storyshots Inputs/CheckBox With Tooltip 1`] = `
+<label
+  className="MuiFormControlLabel-root checkbox errorMessage warningMessage"
+>
+  <span
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={null}
+  >
+    <span
+      className="MuiIconButton-label"
+    >
+      <input
+        checked={false}
+        className="PrivateSwitchBase-input-8"
+        data-indeterminate={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+        />
+      </svg>
+    </span>
+  </span>
+  <span
+    className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+  >
+    This is the checkbox
+  </span>
+</label>
+`;
+
+exports[`Storyshots Inputs/Select Plain 1`] = `
+<div
+  className="form-component select select"
+>
+  <label
+    className="label"
+  >
+    Select a fruit
+  </label>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root"
+    onClick={[Function]}
+  >
+    <div
+      aria-haspopup="listbox"
+      className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiOutlinedInput-input"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "&#8203;",
+          }
+        }
+      />
+    </div>
+    <input
+      aria-hidden={true}
+      className="MuiSelect-nativeInput"
+      onAnimationStart={[Function]}
+      onChange={[Function]}
+      tabIndex={-1}
+      value=""
+    />
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root MuiSelect-icon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-13 MuiOutlinedInput-notchedOutline"
+      style={
+        Object {
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <legend
+        className="PrivateNotchedOutline-legend-14"
+        style={
+          Object {
+            "width": 0.01,
+          }
+        }
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Inputs/TextInput Plain 1`] = `
+<div
+  className="text-field"
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+      data-shrink={false}
+    >
+      Text field label
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiOutlinedInput-input"
+        disabled={false}
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value=""
+      />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-17 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-19"
+        >
+          <span>
+            Text field label
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;
