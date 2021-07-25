@@ -21,4 +21,5 @@ export const Standard = (args: ILoginCardProps) => {
     return <LoginCard {...args} />
 }
 
-Standard.args = {} as ILoginCardProps
+Standard.args = {
+} as ILoginCardProps

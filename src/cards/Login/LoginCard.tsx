@@ -1,32 +1,63 @@
-import style from "./LoginCard.module.scss";
-import  Button  from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField"
+import style from "./LoginCard.module.scss"
+import Button from "@material-ui/core/Button"
+import classnames from 'classnames'
+import { ReactComponent as FacebookIcon } from "assets/img/icon-facebook.svg"
+import { ReactComponent as GoogleIcon } from "assets/img/icon-google.svg"
+import { Form, Formik } from "formik"
+import { ILoginDTO } from "./interfaces/ILoginDTO"
+import TextField from "@inputs/TextInput/TextInput.formik"
 
-export interface ILoginCardProps{
-
+export interface ILoginCardProps {
+    onLogin: (values : ILoginDTO, formikBag:any) => void,
+    onFacebookLogin: (event : any) => void
+    onGoogleLogin: (event : any) => void
+    className?: string,
+    forgotPasswordHref?:string,
+    isLoading?: boolean, 
 }
 
+export const LoginCard : React.FC<ILoginCardProps> = ({onLogin, className, forgotPasswordHref, isLoading,onGoogleLogin,  onFacebookLogin, ...props}: ILoginCardProps) => {
+    return (
+        <div className={classnames('login-card', style.loginCard, className)}>
+            <Formik 
+                onSubmit={onLogin}
+                initialValues={{} as ILoginDTO}
+            >
+                <Form className={style.loginForm}>
+                <div className={style.loginFields}>
+                    <TextField className={classnames(style.loginSingleField, 'username-field')} id="username" name="username" label="Email" variant="outlined" disabled={isLoading}/>
+                    <TextField className={classnames(style.loginSingleField, 'password-field')} id="password" name="password" type='password' label="Password" variant="outlined" disabled={isLoading}/>
+                </div>
+                <div className={style.forgotPwd}>
+                    <span>
+                        <a href={forgotPasswordHref}>Password dimenticata?</a>
+                    </span>
+                </div>
 
-export default function LoginCard (props: ILoginCardProps){
-   return <div className={style.loginCard}>
-<div className={style.loginFields}>
-<TextField className={style.loginSingleField} id="outlined-basic" label="Email" variant="outlined" />
-<TextField className={style.loginSingleField} id="outlined-basic" label="Password" variant="outlined" />
-</div>
-<div className={style.forgotPwd}>
-    <span><a href="">Password dimenticata?</a></span>
-</div>
-
-<div className={style.btnContainer}>
-    <Button className={style.loginBtn}>Login</Button>
-</div>  
-<div className={style.socialLogin}>
-<span>Oppure accedi con</span>
-<div className={style.socialLoginBtns}>
-<Button className={style.roundButton}><img src="./VectorG.png"></img></Button>
-<Button className={style.roundButton}><img src="./Vector.png"></img></Button>
-</div>
-<p>Sei un nuovo utente? <a className={style.registerLink} href="">Registrati</a></p>
-</div>
-   </div>
+                <div className={style.btnContainer}>
+                    <Button type='submit' className={style.loginBtn}>Login</Button>
+                </div>
+                </Form>
+            </Formik>
+            <div className={style.socialLogin}>
+                <span>Oppure accedi con</span>
+                <div className={style.socialLoginBtns}>
+                    <Button className={style.roundButton} onClick={onFacebookLogin}>
+                        <FacebookIcon />
+                    </Button>
+                    <Button className={style.roundButton} onClick={onGoogleLogin}>
+                        <GoogleIcon />
+                    </Button>
+                </div>
+                <p>
+                    Sei un nuovo utente?{" "}
+                    <a className={style.registerLink} href="">
+                        Registrati
+                    </a>
+                </p>
+            </div>
+        </div>
+    )
 }
+
+export default LoginCard
