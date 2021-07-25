@@ -2,7 +2,12 @@ import ColorPickerFormik from './ColorPicker.formik'
 import { useFormikContext } from 'formik';
 import ColorPicker from './ColorPicker'
 
-export default function TextFieldComponent(props){
+export interface ITextfieldComponentProps{
+
+}
+
+
+export default function TextFieldComponent(props: ITextfieldComponentProps){
 
     const context = useFormikContext()
 

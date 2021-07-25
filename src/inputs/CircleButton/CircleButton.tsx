@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../Button/Button'
-import './CircleButton.scss'
+import style from './CircleButton.module.scss'
 
 
 export interface ICircleButtonProps extends React.HTMLAttributes<HTMLDivElement>{
@@ -12,7 +12,7 @@ export const CircleButton : React.FC<ICircleButtonProps> = (props : ICircleButto
     const {children, ...rest} = props
 
 
-    return <Button className='circle-button'>
+    return <Button className={style.CircleButton}>
         {children}
     </Button>
 }
