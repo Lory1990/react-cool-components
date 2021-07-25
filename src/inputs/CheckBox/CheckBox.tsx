@@ -7,6 +7,7 @@ import ITooltipProps from '../../interfaces/ITooltipProps';
 import style from './CheckBox.module.scss';
 
 export interface ICheckBoxProps extends IFormProps, ITooltipProps, CheckboxProps{
+    
 }
 
 export function  CheckboxComponent({onChange, id, disabled, label, name, value, className, errorMessage, warningMessage, readOnly, success} : ICheckBoxProps){
