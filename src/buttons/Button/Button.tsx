@@ -5,13 +5,13 @@ import { MouseEventHandler } from 'react'
 
 export interface IStandardButtonProps{
     children: any,
-    className: string,
-    onClick: MouseEventHandler<any>,
+    className?: string,
+    onClick?: MouseEventHandler<any>,
     variant?: 'text' | 'outlined' | 'contained';
     color?: 'inherit' | 'primary' | 'secondary' | 'default',
 }
 
-export function StandardButton({children, className, onClick, variant, color,...props} : IStandardButtonProps){
+export const StandardButton : React.FC<IStandardButtonProps> = ({children, className, onClick, variant, color,...props} : IStandardButtonProps) => {
 
     return <Button className={classnames(className,style.standardButton,  'standard-button')} variant={variant} color={color} onClick={onClick} {...props}>
         {children}

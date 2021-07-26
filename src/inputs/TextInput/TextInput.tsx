@@ -12,13 +12,13 @@ export type ITextInputProps  = IFormProps & TextFieldProps & ITooltipProps & {
     parseTransform?: (input : string) => string,
     /** Function to parse text rendering Text */
     renderTransform?: (input : string) => string,
-    min: number,
-    max: number,
-    step:number,
+    min?: number,
+    max?: number,
+    step?:number,
 }
 
 
-export function TextInputComponent(props : ITextInputProps){
+export const TextInputComponent : React.FC<ITextInputProps> = (props : ITextInputProps) => {
 
     const { parseTransform, maxLength, className, value, onChange, label, error, min, max, step, ...rest } = props
 
@@ -30,7 +30,7 @@ export function TextInputComponent(props : ITextInputProps){
         onChange && onChange(event)
     }
 
-    return <div className={classnames('text-field', className)}>
+    return <div className={classnames('text-field',style.textField, className)}>
             <TextField 
                 value={value || ""}
                 label={label}

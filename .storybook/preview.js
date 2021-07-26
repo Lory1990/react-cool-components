@@ -4,7 +4,7 @@ import { wd } from "paths.macro"
 const workingDirPath = wd ? `/${wd}` : "/"
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: "^on[A-Z]*" },
   layout: "centered",
   controls: {
     matchers: {

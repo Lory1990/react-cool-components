@@ -5,7 +5,8 @@ export default {
     component: ColorPicker,    
 };
   
-  export const Plain = (args) => {
-    return <Colorpicker {...args}/> 
+  export const Plain = (args: any) => {
+    // return <ColorPicker {...args}> ColorPicker </ColorPicker>;
+    return <div>TBD</div>
   }
   
