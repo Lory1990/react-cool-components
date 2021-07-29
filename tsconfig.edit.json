@@ -1,13 +1,11 @@
 {
-  "compilerOptions": {
-    "baseUrl": "src",
-    "paths": {
-      "@components/*": [
-        "components/*"
-      ],
-      "@inputs/*": [
-        "inputs/*"
-      ]
-    },
-  }
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "@buttons/*": ["buttons/*"],
+            "@buttons": ["buttons"],
+            "@inputs/*": ["inputs/*"],
+            "@inputs": ["inputs"]
+        }
+    }
 }

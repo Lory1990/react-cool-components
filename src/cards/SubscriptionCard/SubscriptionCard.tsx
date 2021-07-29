@@ -3,7 +3,7 @@ import classnames from "classnames"
 import style from "./SubscriptionCard.module.scss"
 import { ReactComponent as FeatureYes } from "assets/img/feature-yes.svg"
 import { ReactComponent as FeatureNo } from "assets/img/feature-no.svg"
-import { Button } from "@material-ui/core"
+import { Button } from "@buttons"
 
 export enum SubscriptionCardTypology {
     STANDARD = "STANDARD",

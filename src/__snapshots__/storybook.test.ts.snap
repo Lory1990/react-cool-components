@@ -1212,6 +1212,227 @@ exports[`Storyshots Buttons/CircleButton Template 1`] = `
 </button>
 `;
 
+exports[`Storyshots Cards/LoginCard Standard 1`] = `
+<div
+  className="login-card loginCard"
+>
+  <form
+    action="#"
+    className="loginForm"
+    onReset={[Function]}
+    onSubmit={[Function]}
+  >
+    <div
+      className="loginFields"
+    >
+      <div
+        className="text-field textField loginSingleField username-field"
+      >
+        <div
+          className="MuiFormControl-root MuiTextField-root"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+            data-shrink={false}
+            htmlFor="username"
+            id="username-label"
+          >
+            Email
+          </label>
+          <div
+            className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+            onClick={[Function]}
+          >
+            <input
+              aria-invalid={false}
+              autoFocus={false}
+              className="MuiInputBase-input MuiOutlinedInput-input"
+              disabled={false}
+              id="username"
+              name="username"
+              onAnimationStart={[Function]}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+            <fieldset
+              aria-hidden={true}
+              className="PrivateNotchedOutline-root-1 MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                className="PrivateNotchedOutline-legendLabelled-3"
+              >
+                <span>
+                  Email
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <div
+        className="text-field textField loginSingleField password-field"
+      >
+        <div
+          className="MuiFormControl-root MuiTextField-root"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+            data-shrink={false}
+            htmlFor="password"
+            id="password-label"
+          >
+            Password
+          </label>
+          <div
+            className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+            onClick={[Function]}
+          >
+            <input
+              aria-invalid={false}
+              autoFocus={false}
+              className="MuiInputBase-input MuiOutlinedInput-input"
+              disabled={false}
+              id="password"
+              name="password"
+              onAnimationStart={[Function]}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="password"
+              value=""
+            />
+            <fieldset
+              aria-hidden={true}
+              className="PrivateNotchedOutline-root-1 MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                className="PrivateNotchedOutline-legendLabelled-3"
+              >
+                <span>
+                  Password
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="forgotPwd"
+    >
+      <span>
+        <a>
+          Password dimenticata?
+        </a>
+      </span>
+    </div>
+    <div
+      className="btnContainer"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text loginBtn standardButton standard-button"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="submit"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Login
+        </span>
+      </button>
+    </div>
+  </form>
+  <div
+    className="socialLogin"
+  >
+    <span>
+      Oppure accedi con
+    </span>
+    <div
+      className="socialLoginBtns"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text roundButton standardButton standard-button"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <svg>
+            icon-facebook.svg
+          </svg>
+        </span>
+      </button>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text roundButton standardButton standard-button"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <svg>
+            icon-google.svg
+          </svg>
+        </span>
+      </button>
+    </div>
+    <p>
+      Sei un nuovo utente?
+       
+      <a
+        className="registerLink"
+        href=""
+      >
+        Registrati
+      </a>
+    </p>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Cards/SubscriptionCard Disabled 1`] = `
 <div
   className="subscription-card subscriptionCard disabled disabled"
@@ -1690,7 +1911,7 @@ exports[`Storyshots Inputs/CheckBox Plain 1`] = `
 >
   <span
     aria-disabled={false}
-    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
     onBlur={[Function]}
     onDragLeave={[Function]}
     onFocus={[Function]}
@@ -1709,7 +1930,7 @@ exports[`Storyshots Inputs/CheckBox Plain 1`] = `
     >
       <input
         checked={false}
-        className="PrivateSwitchBase-input-4"
+        className="PrivateSwitchBase-input-8"
         data-indeterminate={false}
         onChange={[Function]}
         type="checkbox"
@@ -1740,7 +1961,7 @@ exports[`Storyshots Inputs/CheckBox With Error And Warning 1`] = `
 >
   <span
     aria-disabled={false}
-    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-9 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-13 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
     onBlur={[Function]}
     onDragLeave={[Function]}
     onFocus={[Function]}
@@ -1759,7 +1980,7 @@ exports[`Storyshots Inputs/CheckBox With Error And Warning 1`] = `
     >
       <input
         checked={false}
-        className="PrivateSwitchBase-input-12"
+        className="PrivateSwitchBase-input-16"
         data-indeterminate={false}
         onChange={[Function]}
         type="checkbox"
@@ -1788,7 +2009,7 @@ exports[`Storyshots Inputs/CheckBox With Tooltip 1`] = `
 >
   <span
     aria-disabled={false}
-    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-9 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
     onBlur={[Function]}
     onDragLeave={[Function]}
     onFocus={[Function]}
@@ -1807,7 +2028,7 @@ exports[`Storyshots Inputs/CheckBox With Tooltip 1`] = `
     >
       <input
         checked={false}
-        className="PrivateSwitchBase-input-8"
+        className="PrivateSwitchBase-input-12"
         data-indeterminate={false}
         onChange={[Function]}
         type="checkbox"
@@ -1883,7 +2104,7 @@ exports[`Storyshots Inputs/Select Plain 1`] = `
     </svg>
     <fieldset
       aria-hidden={true}
-      className="PrivateNotchedOutline-root-13 MuiOutlinedInput-notchedOutline"
+      className="PrivateNotchedOutline-root-17 MuiOutlinedInput-notchedOutline"
       style={
         Object {
           "paddingLeft": 8,
@@ -1891,7 +2112,7 @@ exports[`Storyshots Inputs/Select Plain 1`] = `
       }
     >
       <legend
-        className="PrivateNotchedOutline-legend-14"
+        className="PrivateNotchedOutline-legend-18"
         style={
           Object {
             "width": 0.01,
@@ -1943,10 +2164,10 @@ exports[`Storyshots Inputs/TextInput Plain 1`] = `
       />
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-17 MuiOutlinedInput-notchedOutline"
+        className="PrivateNotchedOutline-root-21 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-19"
+          className="PrivateNotchedOutline-legendLabelled-23"
         >
           <span>
             Text field label

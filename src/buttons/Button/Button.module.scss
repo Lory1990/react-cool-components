@@ -1,25 +1,31 @@
-button.standardButton{
-    box-shadow: none;
+button.standardButton {
     border-radius: 16px;
     padding: 14px 46px;
-    span.MuiButton-label{
+    span.MuiButton-label {
         text-transform: none;
         size: 14px;
     }
 
-    &:hover{
-        box-shadow: none;
-    }
-
+    // background: $primaryColor;
+    // border: 2px solid $primaryColor;
+    // color: $secondaryColor;
+    padding: 5px 18px;
+    // // text-align: center;
+    // font-size: 18px;
+    // font-weight: bold;
+    border-radius: 7px;
+    // box-shadow: -10px 20px 15px -10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    text-transform: uppercase;
 }
 
-button.black-button{
-    background-color: #1B1D21;
-    span.MuiButton-label{
+button.black-button {
+    background-color: #1b1d21;
+    span.MuiButton-label {
         color: white;
     }
 
-    &:hover{
-        background-color: lighten(#1B1D21, 20%);
+    &:hover {
+        background-color: lighten(#1b1d21, 20%);
     }
 }

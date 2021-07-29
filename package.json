@@ -32,6 +32,13 @@
         "start": "yarn storybook",
         "storybook": "start-storybook -p 6006 -s public"
     },
+    "jest": {
+        "moduleNameMapper": {
+            "@inputs(.*)$": "<rootDir>/src/inputs$1",
+            "@buttons(.*)$": "<rootDir>/src/buttons$1",
+            "@hooks(.*)$": "<rootDir>/src/hooks$1"
+        }
+    },
     "eslintConfig": {
         "extends": [
             "react-app",
