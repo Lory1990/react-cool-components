@@ -1,88 +1,89 @@
 {
-  "name": "react-cool-components",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.11.4",
-    "@material-ui/lab": "^4.0.0-alpha.58",
-    "@storybook/addon-storyshots": "^6.3.5",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "formik": "^2.2.9",
-    "husky": "^7.0.1",
-    "lodash": "^4.17.21",
-    "material-ui": "^1.0.0-beta.47",
-    "material-ui-color": "^1.2.0",
-    "node-sass": "^5.0.0",
-    "paths.macro": "^3.0.1",
-    "react": "^17.0.2",
-    "react-click-outside-hook": "^1.1.1",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.2.0"
-  },
-  "scripts": {
-    "build": "yarn clean && rollup -c",
-    "build-and-publish": "yarn test && yarn build-complete && npm publish",
-    "build-complete": "yarn clean && yarn lint && rollup -c",
-    "build-storybook": "build-storybook -s public",
-    "lint": "yarn eslint src",
-    "start": "yarn storybook",
-    "storybook": "start-storybook -p 6006 -s public"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
+    "name": "react-cool-components",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@material-ui/core": "^4.11.4",
+        "@material-ui/lab": "^4.0.0-alpha.58",
+        "@storybook/addon-storyshots": "^6.3.5",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "formik": "^2.2.9",
+        "husky": "^7.0.1",
+        "lodash": "^4.17.21",
+        "material-ui": "^1.0.0-beta.47",
+        "material-ui-color": "^1.2.0",
+        "node-sass": "^5.0.0",
+        "paths.macro": "^3.0.1",
+        "react": "^17.0.2",
+        "react-click-outside-hook": "^1.1.1",
+        "react-dom": "^17.0.2",
+        "react-scripts": "4.0.3",
+        "typescript": "^4.2.0"
+    },
+    "scripts": {
+        "build": "yarn clean && rollup -c",
+        "test": "react-scripts test",
+        "build-and-publish": "yarn test && yarn build-complete && npm publish",
+        "build-complete": "yarn clean && yarn lint && rollup -c",
+        "build-storybook": "build-storybook -s public",
+        "lint": "yarn eslint src",
+        "start": "yarn storybook",
+        "storybook": "start-storybook -p 6006 -s public"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
         ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^19.0.1",
-    "@rollup/plugin-node-resolve": "^13.0.2",
-    "@rollup/plugin-typescript": "^8.2.3",
-    "@svgr/webpack": "^5.4.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.0",
-    "rollup-plugin-progress": "^1.1.2",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.30.0",
-    "rollup-plugin-visualizer": "^5.5.2",
-    "@storybook/addon-actions": "^6.3.6",
-    "@storybook/addon-essentials": "^6.3.6",
-    "@storybook/addon-links": "^6.3.6",
-    "@storybook/node-logger": "^6.3.6",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.6",
-    "@types/lodash": "^4.14.170",
-    "@types/node": "^15.12.2",
-    "@types/react": "^17.0.10",
-    "@types/react-dom": "^17.0.7",
-    "sass-resources-loader": "^2.2.3",
-    "storybook-addon-designs": "^6.0.1",
-    "storybook-vscode-component": "^1.0.8",
-    "tsconfig-paths-webpack-plugin": "^3.5.1"
-  }
+        "overrides": [
+            {
+                "files": [
+                    "**/*.stories.*"
+                ],
+                "rules": {
+                    "import/no-anonymous-default-export": "off"
+                }
+            }
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^19.0.1",
+        "@rollup/plugin-node-resolve": "^13.0.2",
+        "@rollup/plugin-typescript": "^8.2.3",
+        "@svgr/webpack": "^5.4.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-postcss": "^4.0.0",
+        "rollup-plugin-progress": "^1.1.2",
+        "rollup-plugin-terser": "^7.0.2",
+        "rollup-plugin-typescript2": "^0.30.0",
+        "rollup-plugin-visualizer": "^5.5.2",
+        "@storybook/addon-actions": "^6.3.6",
+        "@storybook/addon-essentials": "^6.3.6",
+        "@storybook/addon-links": "^6.3.6",
+        "@storybook/node-logger": "^6.3.6",
+        "@storybook/preset-create-react-app": "^3.2.0",
+        "@storybook/react": "^6.3.6",
+        "@types/lodash": "^4.14.170",
+        "@types/node": "^15.12.2",
+        "@types/react": "^17.0.10",
+        "@types/react-dom": "^17.0.7",
+        "sass-resources-loader": "^2.2.3",
+        "storybook-addon-designs": "^6.0.1",
+        "storybook-vscode-component": "^1.0.8",
+        "tsconfig-paths-webpack-plugin": "^3.5.1"
+    }
 }

@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react"
+import { Meta, Story } from "@storybook/react"
 import CircleButton, { ICircleButtonProps } from "./CircleButton"
 import { getStoryPath } from "utils/FileUtils"
 import { baseAbsolute, file, wd } from "paths.macro"
@@ -13,24 +13,17 @@ export default {
     }
 } as Meta
 
-export const Plain = (args: ICircleButtonProps) => <CircleButton {...args} />
+export const Template = (args: ICircleButtonProps) => <CircleButton {...args} />
+
+export const Plain: Story<ICircleButtonProps> = Template.bind({})
+export const Disabled: Story<ICircleButtonProps> = Template.bind({})
 
 Plain.args = {
-    label: "This is the circle button"
+    children: "A",
+    disabled: true
 } as ICircleButtonProps
 
-export const WithTooltip = (args: ICircleButtonProps) => <CircleButton {...args} />
-
-WithTooltip.args = {
-    label: "This is the circle button",
-    tooltip: "This is the tooltip"
-} as ICircleButtonProps
-
-export const WithErrorAndWarning = (args: ICircleButtonProps) => <CircleButton {...args} />
-
-WithTooltip.args = {
-    label: "This is the circle button",
-    tooltip: "This is the tooltip",
-    errorMessage: "This is the error",
-    warningMessage: "This is the warning"
+Disabled.args = {
+    children: "A",
+    disabled: true
 } as ICircleButtonProps

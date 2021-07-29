@@ -1,12 +1,218 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Buttons/Button Array Plain 1`] = `
+exports[`Storyshots Buttons/Button Array Disabled 1`] = `
+<div
+  className="buttonArray button-array disabled disabled"
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button Mui-disabled Mui-disabled"
+    disabled={1}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={-1}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      First button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button Mui-disabled Mui-disabled"
+    disabled={1}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={-1}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Second button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button Mui-disabled Mui-disabled"
+    disabled={1}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={-1}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Third button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button Mui-disabled Mui-disabled"
+    disabled={1}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={-1}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Fourth button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Buttons/Button Array Disabled Array 1`] = `
 <div
   className="buttonArray button-array"
 >
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem isSelected standardButton standard-button"
-    disabled={false}
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button Mui-disabled Mui-disabled"
+    disabled={1}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={-1}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      First button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Second button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button Mui-disabled Mui-disabled"
+    disabled={1}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={-1}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Third button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Fourth button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Buttons/Button Array Disabled Function 1`] = `
+<div
+  className="buttonArray button-array"
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
     onBlur={[Function]}
     onClick={[Function]}
     onDragLeave={[Function]}
@@ -29,8 +235,8 @@ exports[`Storyshots Buttons/Button Array Plain 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem isSelected standardButton standard-button"
-    disabled={false}
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
     onBlur={[Function]}
     onClick={[Function]}
     onDragLeave={[Function]}
@@ -50,6 +256,569 @@ exports[`Storyshots Buttons/Button Array Plain 1`] = `
       className="MuiButton-label"
     >
       Second button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button Mui-disabled Mui-disabled"
+    disabled={1}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={-1}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Third button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Fourth button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Buttons/Button Array Disabled String 1`] = `
+<div
+  className="buttonArray button-array"
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button Mui-disabled Mui-disabled"
+    disabled={1}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={-1}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      First button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Second button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Third button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Fourth button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Buttons/Button Array Plain 1`] = `
+<div
+  className="buttonArray button-array"
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      First button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Second button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Third button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Fourth button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Buttons/Button Array Selected Array 1`] = `
+<div
+  className="buttonArray button-array"
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem selected selected standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      First button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem selected selected standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Second button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Third button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Fourth button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Buttons/Button Array Selected Function 1`] = `
+<div
+  className="buttonArray button-array"
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      First button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Second button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem selected selected standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Third button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Fourth button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Buttons/Button Array Selected String 1`] = `
+<div
+  className="buttonArray button-array"
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem selected selected standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      First button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Second button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Third button
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text button-array-item buttonArrayItem standardButton standard-button"
+    disabled={0}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Fourth button
     </span>
   </button>
 </div>
@@ -133,9 +902,139 @@ exports[`Storyshots Buttons/Button Contained Secondary 1`] = `
 </button>
 `;
 
-exports[`Storyshots Buttons/Button Plain 1`] = `
+exports[`Storyshots Buttons/Button Disabled 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-text standardButton standard-button"
+  className="MuiButtonBase-root MuiButton-root MuiButton-text standardButton standard-button Mui-disabled Mui-disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={-1}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/Button Disabled Contained Primary 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained standardButton standard-button MuiButton-containedPrimary Mui-disabled Mui-disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={-1}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/Button Disabled Contained Secondary 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained standardButton standard-button MuiButton-containedSecondary Mui-disabled Mui-disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={-1}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/Button Disabled Outlined 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-outlined standardButton standard-button MuiButton-outlinedSecondary Mui-disabled Mui-disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={-1}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/Button Disabled Outlined Secondary 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-outlined standardButton standard-button MuiButton-outlinedSecondary Mui-disabled Mui-disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={-1}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/Button Outlined 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-outlined standardButton standard-button MuiButton-outlinedPrimary"
   disabled={false}
   onBlur={[Function]}
   onDragLeave={[Function]}
@@ -159,9 +1058,243 @@ exports[`Storyshots Buttons/Button Plain 1`] = `
 </button>
 `;
 
+exports[`Storyshots Buttons/Button Outlined Secondary 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-outlined standardButton standard-button MuiButton-outlinedSecondary"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/Button Primary 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-text standardButton standard-button MuiButton-textPrimary"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/Button Secondary 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-text standardButton standard-button MuiButton-textSecondary"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Bottone
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/CircleButton Disabled 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-text circle-button circleButton standardButton standard-button Mui-disabled Mui-disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={-1}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    A
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/CircleButton Plain 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-text circle-button circleButton standardButton standard-button Mui-disabled Mui-disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={-1}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    A
+  </span>
+</button>
+`;
+
+exports[`Storyshots Buttons/CircleButton Template 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-text circle-button circleButton standardButton standard-button"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  />
+</button>
+`;
+
+exports[`Storyshots Cards/SubscriptionCard Disabled 1`] = `
+<div
+  className="subscription-card subscriptionCard disabled disabled"
+>
+  <h2
+    className="title title"
+  >
+    Sottoscrizione
+  </h2>
+  <div
+    className="price price"
+  >
+    <span
+      className="priceValue price-value"
+    >
+      €
+       
+      10
+    </span>
+    <span
+      className="paymentFrequency payment-frequency"
+    >
+      
+    </span>
+  </div>
+  <div
+    className="titleFeatures title-features"
+  >
+    Caratteristiche
+    :
+  </div>
+  <ul
+    className="listFeatures list-features"
+  >
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-yes.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 1
+      </span>
+    </li>
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-yes.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 2
+      </span>
+    </li>
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-no.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 3
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`Storyshots Cards/SubscriptionCard Most Convenient 1`] = `
 <div
-  className="subscription-card subscriptionCard mostConvenient"
+  className="subscription-card subscriptionCard mostConvenient most-convenient "
 >
   <span
     className="badge"
@@ -241,6 +1374,34 @@ exports[`Storyshots Cards/SubscriptionCard Most Convenient 1`] = `
       </span>
     </li>
   </ul>
+</div>
+`;
+
+exports[`Storyshots Cards/SubscriptionCard No Features 1`] = `
+<div
+  className="subscription-card subscriptionCard"
+>
+  <h2
+    className="title title"
+  >
+    Sottoscrizione
+  </h2>
+  <div
+    className="price price"
+  >
+    <span
+      className="priceValue price-value"
+    >
+      €
+       
+      10
+    </span>
+    <span
+      className="paymentFrequency payment-frequency"
+    >
+      /2 mesi
+    </span>
+  </div>
 </div>
 `;
 
@@ -346,6 +1507,86 @@ exports[`Storyshots Cards/SubscriptionCard Standard 1`] = `
     <span
       className="paymentFrequency payment-frequency"
     >
+      /mese
+    </span>
+  </div>
+  <div
+    className="titleFeatures title-features"
+  >
+    Caratteristiche
+    :
+  </div>
+  <ul
+    className="listFeatures list-features"
+  >
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-yes.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 1
+      </span>
+    </li>
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-yes.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 2
+      </span>
+    </li>
+    <li
+      className="singleFeature single-feature"
+    >
+       
+      <svg>
+        feature-no.svg
+      </svg>
+       
+      <span
+        className="feature-text featureText"
+      >
+        Feature 3
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Cards/SubscriptionCard Standard Two Months 1`] = `
+<div
+  className="subscription-card subscriptionCard"
+>
+  <h2
+    className="title title"
+  >
+    Sottoscrizione
+  </h2>
+  <div
+    className="price price"
+  >
+    <span
+      className="priceValue price-value"
+    >
+      €
+       
+      10
+    </span>
+    <span
+      className="paymentFrequency payment-frequency"
+    >
       /2 mesi
     </span>
   </div>
@@ -401,6 +1642,45 @@ exports[`Storyshots Cards/SubscriptionCard Standard 1`] = `
       </span>
     </li>
   </ul>
+</div>
+`;
+
+exports[`Storyshots Cards/SubscriptionCard With Description 1`] = `
+<div
+  className="subscription-card subscriptionCard"
+>
+  <h2
+    className="title title"
+  >
+    Sottoscrizione
+  </h2>
+  <div
+    className="description description"
+  >
+    Descrizione Descrizione Descrizione Descrizione Descrizione
+  </div>
+  <div
+    className="price price"
+  >
+    <span
+      className="priceValue price-value"
+    >
+      €
+       
+      10
+    </span>
+    <span
+      className="paymentFrequency payment-frequency"
+    >
+      /2 mesi
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input/ColorPicker Plain 1`] = `
+<div>
+  TBD
 </div>
 `;
 
@@ -633,7 +1913,7 @@ exports[`Storyshots Inputs/Select Plain 1`] = `
 
 exports[`Storyshots Inputs/TextInput Plain 1`] = `
 <div
-  className="text-field"
+  className="text-field textField"
 >
   <div
     className="MuiFormControl-root MuiTextField-root"

@@ -1,20 +1,18 @@
-import React from 'react'
-import Button from '../Button/Button'
-import style from './CircleButton.module.scss'
+import React from "react"
+import Button, { IStandardButtonProps } from "../Button/Button"
+import style from "./CircleButton.module.scss"
+import classnames from "classnames"
 
+export interface ICircleButtonProps extends IStandardButtonProps {}
 
-export interface ICircleButtonProps extends React.HTMLAttributes<HTMLDivElement>{
-    
-}
-// @TODO capire  bene come integrare il bottone - non si può ad oggi fare di meglio
-export const CircleButton : React.FC<ICircleButtonProps> = (props : ICircleButtonProps)  => {
-    
-    const {children, ...rest} = props
+export const CircleButton: React.FC<ICircleButtonProps> = (props: ICircleButtonProps) => {
+    const { children, className, ...rest } = props
 
-
-    return <Button className={style.CircleButton}>
-        {children}
-    </Button>
+    return (
+        <Button {...rest} className={classnames("circle-button", style.circleButton, className)}>
+            {children}
+        </Button>
+    )
 }
 
 export default CircleButton

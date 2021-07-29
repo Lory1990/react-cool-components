@@ -1,14 +1,13 @@
-button.circle-button{
+.circleButton {
     border-radius: 50000px;
+    min-width: 0;
+    min-height: 0;
     width: 56px;
     height: 56px;
     padding: 5px;
-    box-shadow: 0px 4px 8px #e3e6ec !important;
-    svg{
+    box-shadow: 0px 4px 8px #e3e6ec;
+    svg {
         width: 24px;
         height: 24px;
-    }
-    svg, path{
-        stroke: #000;
     }
 }

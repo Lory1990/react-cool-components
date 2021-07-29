@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react"
+import { Meta, Story } from "@storybook/react"
 import SubscriptionCard, { ISubscriptionCardProps, SubscriptionCardTypology } from "./SubscriptionCard"
 import { getStoryPath } from "utils/FileUtils"
 import { baseAbsolute, file, wd } from "paths.macro"
@@ -17,11 +17,41 @@ export default {
     }
 } as Meta
 
-export const Standard = (args: ISubscriptionCardProps) => {
-    return <SubscriptionCard {...args} />
-}
+const Template = (args: ISubscriptionCardProps) => <SubscriptionCard {...args} />
+
+export const Standard: Story<ISubscriptionCardProps> = Template.bind({})
+export const StandardTwoMonths: Story<ISubscriptionCardProps> = Template.bind({})
+export const Package: Story<ISubscriptionCardProps> = Template.bind({})
+export const MostConvenient: Story<ISubscriptionCardProps> = Template.bind({})
+export const NoFeatures: Story<ISubscriptionCardProps> = Template.bind({})
+export const WithDescription: Story<ISubscriptionCardProps> = Template.bind({})
+export const Disabled: Story<ISubscriptionCardProps> = Template.bind({})
 
 Standard.args = {
+    price: {
+        currency: "€",
+        value: 10
+    },
+    title: "Sottoscrizione",
+    mostConvenient: false,
+    typology: SubscriptionCardTypology.STANDARD,
+    features: [
+        {
+            included: true,
+            text: "Feature 1"
+        },
+        {
+            included: true,
+            text: "Feature 2"
+        },
+        {
+            included: false,
+            text: "Feature 3"
+        }
+    ]
+} as ISubscriptionCardProps
+
+StandardTwoMonths.args = {
     price: {
         currency: "€",
         value: 10
@@ -45,10 +75,6 @@ Standard.args = {
         }
     ]
 } as ISubscriptionCardProps
-
-export const Package = (args: ISubscriptionCardProps) => {
-    return <SubscriptionCard {...args} />
-}
 
 Package.args = {
     price: {
@@ -75,9 +101,31 @@ Package.args = {
     ]
 } as ISubscriptionCardProps
 
-export const MostConvenient = (args: ISubscriptionCardProps) => {
-    return <SubscriptionCard {...args} />
-}
+Disabled.args = {
+    disabled: true,
+    price: {
+        currency: "€",
+        value: 10
+    },
+    title: "Sottoscrizione",
+    paymentFrequency: 2,
+    mostConvenient: false,
+    typology: SubscriptionCardTypology.PACKAGE,
+    features: [
+        {
+            included: true,
+            text: "Feature 1"
+        },
+        {
+            included: true,
+            text: "Feature 2"
+        },
+        {
+            included: false,
+            text: "Feature 3"
+        }
+    ]
+} as ISubscriptionCardProps
 
 MostConvenient.args = {
     price: {
@@ -102,4 +150,25 @@ MostConvenient.args = {
             text: "Feature 3"
         }
     ]
+} as ISubscriptionCardProps
+
+NoFeatures.args = {
+    price: {
+        currency: "€",
+        value: 10
+    },
+    title: "Sottoscrizione",
+    paymentFrequency: 2,
+    typology: SubscriptionCardTypology.STANDARD
+} as ISubscriptionCardProps
+
+WithDescription.args = {
+    price: {
+        currency: "€",
+        value: 10
+    },
+    title: "Sottoscrizione",
+    description: "Descrizione Descrizione Descrizione Descrizione Descrizione",
+    paymentFrequency: 2,
+    typology: SubscriptionCardTypology.STANDARD
 } as ISubscriptionCardProps
