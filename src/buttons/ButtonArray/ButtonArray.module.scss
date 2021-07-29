@@ -1,8 +1,10 @@
 
 .buttonArray{
     .buttonArrayItem{
-        
-        &.isSelected{
+        &:not(:last-of-type){
+            margin-right: 15px;
+        }
+        &.selected{
             background-color: $primaryColor;
             color: $primaryColorText;
         }

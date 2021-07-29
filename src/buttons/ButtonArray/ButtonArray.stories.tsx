@@ -28,23 +28,49 @@ const buttons = [
 const Template = (args: IButtonArrayProps) => <ButtonArray {...args} />
 
 export const Plain: Story<IButtonArrayProps> = Template.bind({})
+export const Disabled: Story<IButtonArrayProps> = Template.bind({})
 export const SelectedString: Story<IButtonArrayProps> = Template.bind({})
 export const SelectedArray: Story<IButtonArrayProps> = Template.bind({})
 export const SelectedFunction: Story<IButtonArrayProps> = Template.bind({})
+export const DisabledString: Story<IButtonArrayProps> = Template.bind({})
+export const DisabledArray: Story<IButtonArrayProps> = Template.bind({})
+export const DisabledFunction: Story<IButtonArrayProps> = Template.bind({})
 
 Plain.args = {
     buttons
+} as IButtonArrayProps
+
+Disabled.args = {
+    buttons,
+    disabled: true
 } as IButtonArrayProps
 
 SelectedString.args = {
     buttons,
     selected: "a"
 } as IButtonArrayProps
+
 SelectedArray.args = {
     buttons,
     selected: ["a", "b"]
 } as IButtonArrayProps
+
 SelectedFunction.args = {
     buttons,
     selected: button => button.id === "c"
+} as IButtonArrayProps
+
+DisabledString.args = {
+    buttons,
+    disabledButton: "a"
+} as IButtonArrayProps
+
+DisabledArray.args = {
+    buttons,
+    disabledButton: ["a", "c"]
+} as IButtonArrayProps
+
+DisabledFunction.args = {
+    buttons,
+    disabledButton: button => button.id === "c"
 } as IButtonArrayProps
