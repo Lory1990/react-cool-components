@@ -14,9 +14,10 @@ export interface ILoginCardProps {
     className?: string
     forgotPasswordHref?: string
     isLoading?: boolean
+    error?: string
 }
 
-export const LoginCard: React.FC<ILoginCardProps> = ({ onLogin, className, forgotPasswordHref, isLoading, onGoogleLogin, onFacebookLogin, ...props }: ILoginCardProps) => {
+export const LoginCard: React.FC<ILoginCardProps> = ({ error, onLogin, className, forgotPasswordHref, isLoading, onGoogleLogin, onFacebookLogin, ...props }: ILoginCardProps) => {
     return (
         <div className={classnames("login-card", style.loginCard, className)}>
             <Formik onSubmit={onLogin} initialValues={{} as ILoginDTO}>
@@ -33,6 +34,7 @@ export const LoginCard: React.FC<ILoginCardProps> = ({ onLogin, className, forgo
                             disabled={isLoading}
                         />
                     </div>
+                    <div className="error-box">{error}</div>
                     <div className={style.forgotPwd}>
                         <span>
                             <a href={forgotPasswordHref}>Password dimenticata?</a>

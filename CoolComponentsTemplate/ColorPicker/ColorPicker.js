@@ -1,9 +1,7 @@
-import { ColorPicker } from 'material-ui-color';
-import classnames from 'classnames'
-import style from './ColorPicker.module.scss'
+import classnames from 'classnames';
 import { useEffect, useState } from 'react';
-import { useClickOutside } from 'react-click-outside-hook'
-import { ReactNode } from '../../../../../../AppData/Local/Microsoft/TypeScript/4.3/node_modules/@types/react';
+import { useClickOutside } from 'react-click-outside-hook';
+import style from './ColorPicker.module.scss';
 
 
 

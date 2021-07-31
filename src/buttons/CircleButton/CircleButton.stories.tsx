@@ -13,14 +13,13 @@ export default {
     }
 } as Meta
 
-export const Template = (args: ICircleButtonProps) => <CircleButton {...args} />
+const Template = (args: ICircleButtonProps) => <CircleButton {...args} />
 
 export const Plain: Story<ICircleButtonProps> = Template.bind({})
 export const Disabled: Story<ICircleButtonProps> = Template.bind({})
 
 Plain.args = {
     children: "A",
-    disabled: true
 } as ICircleButtonProps
 
 Disabled.args = {
