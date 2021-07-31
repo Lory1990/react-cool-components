@@ -6,7 +6,10 @@ import { terser } from 'rollup-plugin-terser'
 import progress from 'rollup-plugin-progress'
 import { visualizer } from 'rollup-plugin-visualizer'
 import svgr from '@svgr/rollup'
+import autoprefixer from 'autoprefixer'
+import copy from 'rollup-plugin-copy'
 import url from '@rollup/plugin-url'
+import sass from 'rollup-plugin-sass'
 
 //https://www.codefeetime.com/post/rollup-config-for-react-component-library-with-typescript-scss/
 //https://github.com/egoist/rollup-plugin-postcss/issues/385
@@ -25,15 +28,30 @@ export default [
     ],
     preserveModules: true,
     plugins: [
+      progress(),
+      copy({
+        targets: [
+          { src: 'src/assets/img/*', dest: 'dist/assets/img' }
+        ]
+      }),
       url(),
       svgr(),
-      progress(),
       peerDepsExternal(),
       typescript({ useTsconfigDeclarationDir: true }),
-      postcss({
-        extract: true,
-        minimize: true,
-        modules: true,
+      // -- Works ---
+      // postcss({
+      //   extract: true,
+      //   minimize: true,
+      //   modules: true,
+      //   plugins: [
+      //     autoprefixer()
+      //   ],
+      // }),
+      sass({
+        options:{
+          data: `@import "src/style/variables.scss";`,
+          processor: css => postcss({plugins:[autoprefixer], modules:true, inject:true}).process(css).then(result => result.css)
+        }
       }),
       terser(),
       visualizer({}),
