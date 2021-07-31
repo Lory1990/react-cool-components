@@ -2015,8 +2015,117 @@ exports[`Storyshots Input/ColorPicker Disabled 1`] = `
 `;
 
 exports[`Storyshots Input/ColorPicker Plain 1`] = `
-<div>
-  TBD
+<div
+  style={
+    Object {
+      "marginTop": "28px",
+      "position": "relative",
+      "zIndex": 9999,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "absolute",
+      }
+    }
+  >
+    <div
+      className="picker picker pickerElementFirst"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#E4E4E4",
+        }
+      }
+    />
+    <div
+      className="hide"
+    >
+      <div
+        className="picker picker__container"
+      >
+        <div
+          className="picker__container__element"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "#A0D7E7",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="hide"
+    >
+      <div
+        className="picker picker__container"
+      >
+        <div
+          className="picker__container__element"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "#A5CEA1",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="hide"
+    >
+      <div
+        className="picker picker__container"
+      >
+        <div
+          className="picker__container__element"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "#FFCE73",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="hide"
+    >
+      <div
+        className="picker picker__container"
+      >
+        <div
+          className="picker__container__element"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "#FF9A7B",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="hide"
+    >
+      <div
+        className="picker picker__container"
+      >
+        <div
+          className="picker__container__element"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "#FFA2C0",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
