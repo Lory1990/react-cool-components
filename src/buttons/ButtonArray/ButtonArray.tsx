@@ -52,7 +52,7 @@ export function ButtonArray({ selected, setSelected, buttons, disabled, disabled
                 return (
                     <Button
                         key={index}
-                        disabled={disabled | isDisabled}
+                        disabled={disabled || isDisabled}
                         className={classnames("button-array-item", style.buttonArrayItem, { [style.selected + " selected"]: isSelected })}
                         onClick={setSelectedButton(button, isSelected)}
                     >

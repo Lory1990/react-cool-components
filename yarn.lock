@@ -2743,7 +2743,7 @@
   resolved "https://registry.yarnpkg.com/@storybook/addon-measure/-/addon-measure-2.0.0.tgz#c40bbe91bacd3f795963dc1ee6ff86be87deeda9"
   integrity sha512-ZhdT++cX+L9LwjhGYggvYUUVQH/MGn2rwbrAwCMzA/f2QTFvkjxzX8nDgMxIhaLCDC+gHIxfJG2wrWN0jkBr3g==
 
-"@storybook/addon-storyshots@^6.3.5":
+"@storybook/addon-storyshots@^6.3.6":
   version "6.3.6"
   resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-6.3.6.tgz#23bc37a3a40a7e4632cdc4a1edc393467e3b85ce"
   integrity sha512-GiArvGGyMdOswtMf5tD2qxrr8Nwi9i9Dcav9flrU1Qwx/1QtVLmvFDT1yvHtpG1Zk7iHtH0c8GCbmZlzW7OQKA==

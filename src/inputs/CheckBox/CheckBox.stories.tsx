@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 import CheckBox, { ICheckBoxProps } from './CheckBox';
 import { getStoryPath } from "utils/FileUtils"
 import { baseAbsolute, file, wd } from "paths.macro"
@@ -13,21 +13,22 @@ export default {
     }
 } as Meta
 
-export const Plain = (args : ICheckBoxProps) => <CheckBox {...args} />;
+const Template = (args : ICheckBoxProps) => <CheckBox {...args} />;
+
+
+export const Plain : Story<ICheckBoxProps> = Template.bind({})
+export const WithTooltip : Story<ICheckBoxProps> = Template.bind({})
+export const WithErrorAndWarning : Story<ICheckBoxProps> = Template.bind({})
 
 Plain.args = {
     label: "This is the checkbox"
 } as ICheckBoxProps
 
 
-export const WithTooltip = (args : ICheckBoxProps) => <CheckBox {...args} />;
-
 WithTooltip.args = {
     label: "This is the checkbox",
     tooltip: "This is the tooltip",
 } as ICheckBoxProps
-
-export const WithErrorAndWarning = (args : ICheckBoxProps) => <CheckBox {...args} />;
 
 WithTooltip.args = {
     label: "This is the checkbox",

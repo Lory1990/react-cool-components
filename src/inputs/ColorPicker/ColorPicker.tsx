@@ -1,11 +1,11 @@
-import { ColorPicker } from 'material-ui-color';
-import classnames from 'classnames'
-import style from './ColorPicker.module.scss'
-import { useEffect, useState } from 'react';
+import classnames from 'classnames';
+import IFormProps from 'interfaces/IFormProps';
+import ITooltipProps from 'interfaces/ITooltipProps';
+import { ReactNode, useEffect, useState } from 'react';
+import style from './ColorPicker.module.scss';
 
-import { ReactNode } from 'react';
 
-export interface IColorPickerProps{
+export interface IColorPickerProps extends IFormProps, ITooltipProps{
     value: string,
     onChange: (Event: any) => void,
     colorPickerProps: IColorPickerProps,
