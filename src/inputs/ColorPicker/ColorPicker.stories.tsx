@@ -2,7 +2,7 @@ import { Story } from '@storybook/react';
 import ColorPicker, { IColorPickerProps } from './ColorPicker'
 
 export default {
-    title: 'Input/ColorPicker',
+    title: 'Inputs/ColorPicker',
     component: ColorPicker,    
 };
   
