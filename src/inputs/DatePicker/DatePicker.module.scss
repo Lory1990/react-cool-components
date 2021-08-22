@@ -1,0 +1,17 @@
+@import "../../../style/variables.scss";
+
+.datePicker {
+    display: flex;
+    flex-direction: column;
+    > label {
+        color: black;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .MuiTextField-root {
+        fieldset {
+            border: 2px solid $colorPrimary;
+            border-radius: 8px;
+        }
+    }
+}
