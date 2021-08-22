@@ -8,10 +8,23 @@
         font-weight: 600;
         margin-bottom: 10px;
     }
-    .MuiTextField-root {
+
+    fieldset {
+        border: 2px solid $primaryColor;
+        border-radius: 8px;
+    }
+
+    svg{
+        fill: $primaryColor;
+    }
+
+    &:hover{
         fieldset {
-            border: 2px solid $primaryColor;
-            border-radius: 8px;
+            border-color: $secondaryColor !important;
+        }   
+
+        svg{
+            fill: $secondaryColor;
         }
     }
 }

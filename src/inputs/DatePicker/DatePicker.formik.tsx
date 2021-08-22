@@ -12,8 +12,8 @@ export default function DatePickerFormik(props: IDatePickerFormikProps) {
 
     return (
         <DatePicker
-            {...meta}
             {...props}
+            errorMessage={meta.error}
             name={props.name}
             value={field.value}
             disabled={isSubmitting || props.disabled}
