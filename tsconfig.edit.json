@@ -5,7 +5,9 @@
             "@buttons/*": ["buttons/*"],
             "@buttons": ["buttons"],
             "@inputs/*": ["inputs/*"],
-            "@inputs": ["inputs"]
+            "@inputs": ["inputs"],
+            "@utils/*": ["utils/*"],
+            "@utils": ["utils"]
         }
     }
 }

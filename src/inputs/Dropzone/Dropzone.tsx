@@ -3,8 +3,8 @@ import { FormHelperText} from '@material-ui/core'
 import {useDropzone} from 'react-dropzone'
 import useFetcher from 'hooks/useFetcher'
 import { useFormikContext }  from 'formik'
-import './Dropzone.scss'
 import RoundLoader from 'components/RoundLoader/RoundLoader'
+import style from './Dropzone.module.scss'
 import _ from 'lodash'
 
 export default function DropzoneFiles(props) {

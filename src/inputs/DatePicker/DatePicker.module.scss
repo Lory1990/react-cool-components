@@ -1,4 +1,4 @@
-@import "../../../style/variables.scss";
+@import "../../style/variables.scss";
 
 .datePicker {
     display: flex;
@@ -10,7 +10,7 @@
     }
     .MuiTextField-root {
         fieldset {
-            border: 2px solid $colorPrimary;
+            border: 2px solid $primaryColor;
             border-radius: 8px;
         }
     }
