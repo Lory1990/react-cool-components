@@ -30,7 +30,7 @@ WithTooltip.args = {
     tooltip: "This is the tooltip",
 } as ICheckBoxProps
 
-WithTooltip.args = {
+WithErrorAndWarning.args = {
     label: "This is the checkbox",
     tooltip: "This is the tooltip",
     errorMessage: "This is the error",
