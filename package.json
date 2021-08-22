@@ -34,7 +34,8 @@
         "moduleNameMapper": {
             "@inputs(.*)$": "<rootDir>/src/inputs$1",
             "@buttons(.*)$": "<rootDir>/src/buttons$1",
-            "@hooks(.*)$": "<rootDir>/src/hooks$1"
+            "@hooks(.*)$": "<rootDir>/src/hooks$1",
+            "@utils(.*)$": "<rootDir>/src/utils$1"
         }
     },
     "eslintConfig": {
