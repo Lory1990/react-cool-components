@@ -1,9 +1,9 @@
 import { InputAdornment, TextField } from '@material-ui/core';
 import {Autocomplete} from '@material-ui/lab';
 import _ from 'lodash'
-import Button from 'components/buttons/Button'
 import './BadgesSelect.scss'
 import Popper from "@material-ui/core/Popper";
+import Button from '@buttons/Button';
 
 //https://material-ui.com/components/autocomplete/#autocomplete
 export default function BadgesSelect(props) {

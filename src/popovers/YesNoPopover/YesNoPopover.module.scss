@@ -1,0 +1,22 @@
+.yesNoPopover{
+    .paper{
+        padding: 16px;
+    }
+
+    .actions{
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        gap:  16px;
+    }
+
+    .title{
+        font-size: 150%;
+        font-weight: bold;
+        margin-bottom: 0.25em;
+    }
+
+    .content{
+        margin-bottom: 0.5em;
+    }
+}

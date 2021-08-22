@@ -1,4 +1,4 @@
-@import '../../../style/variables.scss';
+@import '../../style/variables.scss';
 
 .badges-select{
     // margin-bottom: 60px;
@@ -13,7 +13,7 @@
             
             input{
                 &::placeholder{
-                    color:  $grey2;
+                    color:  #CDCDCD;
                 }
             }
         }        
