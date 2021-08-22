@@ -1,8 +1,8 @@
 import { useMemo } from "react"
 import classnames from "classnames"
 import style from "./SubscriptionCard.module.scss"
-import { ReactComponent as FeatureYes } from "assets/img/feature-yes.svg"
-import { ReactComponent as FeatureNo } from "assets/img/feature-no.svg"
+import { ReactComponent as FeatureYes } from "../../assets/img/feature-yes.svg"
+import { ReactComponent as FeatureNo } from "../../assets/img/feature-no.svg"
 import { Button } from "@buttons"
 
 export enum SubscriptionCardTypology {
