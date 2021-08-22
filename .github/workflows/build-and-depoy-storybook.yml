@@ -28,9 +28,8 @@ jobs:
                   node-version: "14.x"
 
             - run: yarn install
-            
-            - run: yarn test
-              continue-on-error: true
+
+            #- run: yarn test
 
             - run: yarn build-storybook
               env:
