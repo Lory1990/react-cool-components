@@ -14,6 +14,7 @@ This is a project made incollabortion with [ReadTheFuckingManual](https://readth
 
 -   Download the repo via `git clone git@github.com:Lory1990/react-cool-components.git`
 -   Make sure you installed `yarn`
+-   Make sure your `node` version is >= 12 : husky 7.0.1 require it
 -   Type in your terminal `yarn`
 -   Type in your terminal `yarn storybook`
 -   Done
