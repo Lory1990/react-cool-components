@@ -1,135 +1,121 @@
-import { useState } from 'react'
-import { FormHelperText} from '@material-ui/core'
-import {useDropzone} from 'react-dropzone'
-import useFetcher from 'hooks/useFetcher'
-import { useFormikContext }  from 'formik'
-import RoundLoader from 'components/RoundLoader/RoundLoader'
-import style from './Dropzone.module.scss'
+import { FormHelperText } from '@material-ui/core'
+import IFormProps from 'interfaces/IFormProps'
 import _ from 'lodash'
+import RoundLoader from 'other/RoundLoader'
+import { useState } from 'react'
+import { DropEvent, FileRejection, useDropzone } from 'react-dropzone'
+import ErrorAndWarningHelperText from 'ui/ErrorAndWarningHelperText/ErrorAndWarningHelperText'
 
-export default function DropzoneFiles(props) {
+export interface IFileData {
+    name : string,
+    id: string,
+    type: string,
+}
 
-    const { values, errors, setFieldValue } = useFormikContext()
-    const [loading, setLoading] = useState()
+export interface IDropzoneProps extends IFormProps{
+    onDrop?: (acceptedFiles: File[], fileRejections: FileRejection[], event: DropEvent)   => Promise<void>
+    onLoadEnd?: (result: any, acceptedFile: File) => Promise<void>,
+    onUploadFile?: (acceptedFile: File) => Promise<void>,
+    onDelete?: (file : IFileData ) => void
+    onOpen?: (file : IFileData ) => void,
+    files?: IFileData[]
+}
+
+export function Dropzone(props : IDropzoneProps) {
+
+    const [loading, setLoading] = useState<boolean>()
+    const [internalError, setInternalError] = useState<string>()
+
     //const [progress, setProgress] = useState()
-    const fetcher = useFetcher()
+    // const { values, errors, setFieldValue } = useFormikContext()
+    
+    // const fetcher = useFetcher()
 
-    const onDeleteFile = fileId =>async  event => {
-        event.stopPropagation()
+    // const onDeleteFile = fileId =>async  event => {
+    //     event.stopPropagation()
 
-        const { endpointDelete = '/invoice/:fileId',  actionDelete = "DELETE"} = props
+    //     const { endpointDelete = '/invoice/:fileId',  actionDelete = "DELETE"} = props
 
-        if(props.onDeleteFile){
-            await props.onDeleteFile(fileId)
-            return
-        }
+    //     if(props.onDeleteFile){
+    //         await props.onDeleteFile(fileId)
+    //         return
+    //     }
 
-        await fetcher.fetch({
-            method: actionDelete,  
-            url: endpointDelete,
-            urlParams:{
-                fileId
-            }
-        })
+    //     await fetcher.fetch({
+    //         method: actionDelete,  
+    //         url: endpointDelete,
+    //         urlParams:{
+    //             fileId
+    //         }
+    //     })
 
-        // TODO Settare nuovi valori
-    }
+    //     // TODO Settare nuovi valori
+    // }
 
-    const onOpenFile = fileId => async event => {
-        event.stopPropagation()
+    // const onOpen = fileId => async event => {
+    //     event.stopPropagation()
 
-        const { endpointDelete = '/invoice/:fileId',  actionDelete = "GET"} = props
+    //     const { endpointDelete = '/invoice/:fileId',  actionDelete = "GET"} = props
 
-        if(props.onOpenFile){
-            await props.onOpenFile(fileId)
-            return
-        }
+    //     if(props.onOpenFile){
+    //         await props.onOpenFile(fileId)
+    //         return
+    //     }
 
-        await fetcher.fetch({
-            method: actionDelete,  
-            url: endpointDelete,
-            urlParams:{
-                fileId
-            }
-        })
+    //     await fetcher.fetch({
+    //         method: actionDelete,  
+    //         url: endpointDelete,
+    //         urlParams:{
+    //             fileId
+    //         }
+    //     })
 
-    }
+    // }
 
-    const onDrop = async acceptedFiles  =>{
-        // console.log(acceptedFiles)
+    const onDrop = async (acceptedFiles: File[], fileRejections: FileRejection[], event: DropEvent)   =>{
         try{
+            setInternalError(undefined)
             setLoading(true)
 
             if(props.onDrop){
-                await props.onDrop(acceptedFiles)
+                await props.onDrop(acceptedFiles, fileRejections, event)
                 return 
             }
 
-            let promise = new Promise((resolve,reject)=>{
-                let reader = new FileReader();
-                let file = acceptedFiles[0];
-                
-        
-                reader.onloadend = () => {
-                    setFieldValue(props.name, {
-                        result: reader.result,
-                        data: acceptedFiles[0]
-                    })
-                    resolve()
+            for(let file of acceptedFiles){
+                if(props.onLoadEnd){
+                    await onLoadFile(file)
+                }else if(props.onUploadFile){
+                    await props.onUploadFile(file)
                 }
-                
-                reader.readAsDataURL(file)
-            })
-
-            await promise
-
-            // for(let i = 0; i<acceptedFiles.length; i++){
-            //     await uploadSingleFile(acceptedFiles[i])
-            // }
-            props.onUploadComplete && props.onUploadComplete()
-
-        }catch(e){
+            }
+         }catch(e){
             console.error(e)
-            alert("Non siamo riusciti a caricare il file, riprova!")
-        }finally{
+            setInternalError(e.message)
+         }finally{
             setLoading(false)
         }
     }
 
-    // const uploadSingleFile = async singleFile =>{
-    //     if(!singleFile) return;
+    const onLoadFile = async (file: File) =>{
+        return new Promise((resolve,reject)=>{
+            const reader = new FileReader();
+                            
+            reader.onloadend = async () => {
+                if(props.onLoadEnd){
+                    await props.onLoadEnd(reader.result, file)
+                }
 
-    //     try{
-
-    //         const { onUploadProgress, endpoint = '/invoice/add', name, action = "POST", attachmentType} = props
-
-    //         const formData = new FormData();
-    //         formData.append("file", singleFile, singleFile.name);
+                resolve(reader.result)
+            }
             
-            
-    //         let data = await fetcher.fetch({
-    //             method: action,  
-    //             data: formData,
-    //             url: endpoint,
-    //             headers: {
-    //                 'Content-Type': 'multipart/form-data'
-    //             },
-    //             query:{
-    //                 attachmentType
-    //             },
-    //             onUploadProgress: progressEvent => {                        
-    //                 setProgress(parseInt(progressEvent.loaded*100/progressEvent.total, 10))
-    //                 onUploadProgress && onUploadProgress(progressEvent)
-    //             },
-    //         })
-    //     }catch(e){
-    //         alert("Non siamo riusciti a caricare il file, riprova!")
-    //     }
-    // }
+            reader.readAsDataURL(file)
+        })
+    }
 
     const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
 
-    let error = _.get(errors, props.name)
+    const error = props.errorMessage || internalError
 
     return   <div className='dropzone'>
                 <div {...getRootProps()} className='drop-area'>
@@ -141,6 +127,11 @@ export default function DropzoneFiles(props) {
                         <> {isDragActive ? <p>Lasca il tuo file qui</p> : <p>Trascina gli allegati qui oppure clicca per aggiungere files</p> }</>
                 }
             </div>
-            {error && <FormHelperText className='error-text'>{error}</FormHelperText>}
+            <ErrorAndWarningHelperText 
+                errorMessage={error}
+                warningMessage={props.warningMessage}
+            />
         </div>
 }
+
+export default Dropzone

@@ -6,7 +6,6 @@
         "@material-ui/core": "^4.11.4",
         "@material-ui/lab": "^4.0.0-alpha.58",
         "@material-ui/pickers": "^3.3.10",
-        "@storybook/addon-storyshots-puppeteer": "^6.3.7",
         "@testing-library/jest-dom": "^5.11.4",
         "@testing-library/react": "^11.1.0",
         "@testing-library/user-event": "^12.1.10",
@@ -34,7 +33,8 @@
         "moduleNameMapper": {
             "@inputs(.*)$": "<rootDir>/src/inputs$1",
             "@buttons(.*)$": "<rootDir>/src/buttons$1",
-            "@hooks(.*)$": "<rootDir>/src/hooks$1"
+            "@hooks(.*)$": "<rootDir>/src/hooks$1",
+            "@utils(.*)$": "<rootDir>/src/utils$1"
         }
     },
     "eslintConfig": {
@@ -74,6 +74,7 @@
         "@storybook/addon-storyshots": "^6.3.6",
         "@storybook/node-logger": "^6.3.6",
         "@storybook/preset-create-react-app": "^3.2.0",
+        "@storybook/addon-storyshots-puppeteer": "^6.3.7",
         "@storybook/react": "^6.3.6",
         "@svgr/rollup": "^5.5.0",
         "@types/lodash": "^4.14.170",

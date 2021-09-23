@@ -6,6 +6,6 @@ export default function RoundLoader(props : CircularProgressProps) {
 
     const { className, ...realProps} = props
     return (
-        <CircularProgress className={classnames('circular-progress', style.circularProgess, className)} {...realProps} />
+        <CircularProgress className={classnames('round-loader', style.roundLoader, className)} {...realProps} />
     )
 }

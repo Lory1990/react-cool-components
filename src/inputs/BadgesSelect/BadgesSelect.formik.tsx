@@ -1,10 +1,13 @@
 import { useField, useFormikContext } from 'formik';
 import React from "react";
-import BadgesSelect from "./BadgesSelect";
+import BadgesSelect, { IBadgesSelectProps } from "./BadgesSelect";
 import _ from 'lodash'
 
+export interface IBadgesSelectFormikProps extends IBadgesSelectProps{
+    name: string   
+}
 
-export default function BadgesSelectFormik(props){
+export default function BadgesSelectFormik(props : IBadgesSelectFormikProps){
 
     const [field, meta, helpers] = useField(props.name);
     const { isSubmitting } = useFormikContext()
