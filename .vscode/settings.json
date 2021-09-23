@@ -1,3 +1,11 @@
 {
-    "cSpell.language": "it-IT"
+    "cSpell.language": "it-IT",
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    }
 }
