@@ -29,12 +29,11 @@ jobs:
 
             - run: yarn install
 
-            - name: Test
-              continue-on-error: true
-              - run: yarn build-storybook-test
-              - run: yarn test
-                
+            - run: yarn build-storybook-test
 
+            - run: yarn test
+              continue-on-error: true
+                
             - run: yarn build-storybook
               env:
                   CI: true
