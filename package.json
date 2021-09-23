@@ -26,6 +26,7 @@
         "build-and-publish": "yarn test && yarn build-complete && npm publish",
         "build-complete": "yarn clean && yarn lint && rollup -c",
         "build-storybook": "build-storybook -s public",
+        "build-storybook-test": "cross-env-shell IS_TEST=true build-storybook",
         "lint": "yarn eslint src",
         "start": "yarn storybook",
         "storybook": "start-storybook -p 6006 -s public"
@@ -84,6 +85,7 @@
         "@types/react-dom": "^17.0.7",
         "@types/react-dropzone": "^5.1.0",
         "autoprefixer": "^10.3.1",
+        "cross-env": "^7.0.3",
         "depcheck": "^1.4.2",
         "husky": "^7.0.1",
         "moment": "^2.29.1",

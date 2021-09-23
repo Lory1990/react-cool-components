@@ -34,13 +34,13 @@ module.exports = {
             ]
         })
 
-        if (process.env.NODE_ENV === "production") {
+        if (process.env.NODE_ENV === "production" && !process.env.IS_TEST) {
             config.output.publicPath = "/react-cool-components/"
         }
         return config
     },
     managerWebpack: async config => {
-        if (process.env.NODE_ENV === "production") {
+        if (process.env.NODE_ENV === "production" && !process.env.IS_TEST) {
             config.output.publicPath = "/react-cool-components/"
         }
         return config
