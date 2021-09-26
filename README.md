@@ -18,3 +18,56 @@ This is a project made incollabortion with [ReadTheFuckingManual](https://readth
 -   Type in your terminal `yarn`
 -   Type in your terminal `yarn storybook`
 -   Done
+
+# How to contribute
+
+Here is our manifesto ➡️ [JOIN US](./JOIN_US.md)
+
+We have several rules to sandardize our components
+
+## Input components
+
+Write stories with at least these states
+
+-   Plain
+-   Disabled
+-   ReadOnly
+-   Loading
+-   Error
+-   Warning
+-   Success
+
+## Button components
+
+Write stories with at least these states
+
+-   Plain
+-   Disabled
+-   Primary
+-   Secondary
+
+## Complex components
+
+Write stories with at least these states
+
+-   Plain
+-   Disabled
+
+## Gallery components
+
+Write stories with at least these states
+
+-   Plain
+
+## Cards components
+
+Write stories with at least these states
+
+-   Plain
+
+## Dialogs and Popovers components
+
+Write stories with at least these states
+
+-   Plain
+-   Disabled
