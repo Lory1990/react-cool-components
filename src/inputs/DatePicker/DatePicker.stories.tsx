@@ -1,6 +1,6 @@
 import DatePicker, { IDatePickerProps } from "./DatePicker"
 import { Meta, Story } from "@storybook/react"
-import { getStoryPath } from "@utils/FileUtils"
+import { getStoryPath } from "../../utils/FileUtils"
 import { baseAbsolute, file, wd } from "paths.macro"
 import MomentUtils from '@date-io/moment';
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";

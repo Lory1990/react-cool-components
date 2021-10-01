@@ -1,6 +1,6 @@
 import { Meta, Story } from "@storybook/react"
 import CircleButton, { ICircleButtonProps } from "./CircleButton"
-import { getStoryPath } from "utils/FileUtils"
+import { getStoryPath } from "../../utils/FileUtils"
 import { baseAbsolute, file, wd } from "paths.macro"
 
 export default {

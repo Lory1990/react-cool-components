@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react';
 import YesNoPopover, { IYesNoPopoverProps } from './YesNoPopover';
-import { getStoryPath } from "@utils/FileUtils"
+import { getStoryPath } from "../../utils/FileUtils"
 import { baseAbsolute, file, wd } from "paths.macro"
 
 export default {

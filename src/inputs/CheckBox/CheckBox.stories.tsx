@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react';
 import CheckBox, { ICheckBoxProps } from './CheckBox';
-import { getStoryPath } from "utils/FileUtils"
+import { getStoryPath } from "../../utils/FileUtils"
 import { baseAbsolute, file, wd } from "paths.macro"
 
 export default {

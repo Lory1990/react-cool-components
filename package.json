@@ -9,9 +9,11 @@
         "url": "https://lory1990.github.io/"
     },
     "dependencies": {
+        "@emotion/react": "^11.4.1",
         "@material-ui/core": "^4.11.4",
         "@material-ui/lab": "^4.0.0-alpha.58",
         "@material-ui/pickers": "^3.3.10",
+        "@mui/material": "^5.0.2",
         "formik": "^2.2.9",
         "lodash": "^4.17.21",
         "react": "^17.0.2",
@@ -87,9 +89,9 @@
         "@types/lodash": "^4.14.170",
         "@types/node": "^15.12.2",
         "@types/react": "^17.0.10",
+        "@types/react-color": "^3.0.5",
         "@types/react-dom": "^17.0.7",
         "@types/react-dropzone": "^5.1.0",
-        "@types/react-color": "^3.0.5",
         "autoprefixer": "^10.3.1",
         "cross-env": "^7.0.3",
         "depcheck": "^1.4.2",
@@ -97,6 +99,7 @@
         "moment": "^2.29.1",
         "node-sass": "^5.0.0",
         "paths.macro": "^3.0.1",
+        "puppeteer": "^10.4.0",
         "rollup": "^2.55.1",
         "rollup-plugin-copy": "^3.4.0",
         "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -109,7 +112,6 @@
         "sass-resources-loader": "^2.2.3",
         "storybook-addon-designs": "^6.1.0",
         "storybook-vscode-component": "^1.0.8",
-        "puppeteer": "^10.4.0",
         "tsconfig-paths-webpack-plugin": "^3.5.1"
     }
 }
