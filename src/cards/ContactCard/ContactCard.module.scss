@@ -33,8 +33,8 @@
       background-color:#16A699;
       color: white;
       margin-top: 2em;
-      width: 100%;
-      min-width: 345px;
+      width: 80%;
+      min-width: 290px;
       text-transform: uppercase;
       transition: all .5s ease-in;
       margin-bottom:1.8em;
@@ -51,10 +51,11 @@
     }
 
     .contactSingleField{
-        color:black;
-        width: 351px;
         label{
           color:#16A699 
+        }
+        .MuiFormControl-root{
+          width:325px;
         }
     }
 }
