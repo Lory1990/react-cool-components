@@ -1,0 +1,43 @@
+.two-elements-gallery-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/*#app {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    overflow-x: hidden;
+}*/
+  
+.two-elements-gallery__image {
+position: absolute;
+padding: 20px;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: all 2s;
+}
+  
+.two-elements-gallery__image-left {
+clip-path: polygon(0% 100%, 0 0, 100% 0, 100% 0);
+}
+
+.two-elements-gallery__image-left:hover {
+clip-path: polygon(0% 100%, 0 0, 100% 0, 100% 100%);
+}
+
+.two-elements-gallery__image-left:hover + .two-elements-gallery__image-right {
+clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 100% 100%);
+}
+
+.two-elements-gallery__image-right {
+clip-path: polygon(0% 100%, 100% 0, 100% 0%, 100% 100%);
+}
+
+.two-elements-gallery__image-right:hover {
+clip-path: polygon(0% 100%, 0 0, 100% 0, 100% 100%);
+}
