@@ -42,3 +42,16 @@
 .two-elements-gallery__image-right:hover {
     clip-path: polygon(0% 100%, 0 0, 100% 0, 100% 100%);
 }
+
+.two-elements-gallery__only-left {
+    clip-path: none;
+}
+
+.two-elements-gallery__only-right {
+    clip-path: none;
+}
+
+.two-elements-gallery__no-images {
+    background: rgb(89,158,231);
+    background: radial-gradient(circle, rgba(89,158,231,0.6635387431339723) 0%, rgba(135,204,255,0.7951914041983981) 65%); 
+}
