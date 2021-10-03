@@ -1,5 +1,4 @@
 {
-    "cSpell.language": "it-IT",
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
     "editor.formatOnSave": true,
     "[javascript]": {
@@ -8,7 +7,5 @@
     "[typescript]": {
         "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    "cSpell.language": "en"
 }
