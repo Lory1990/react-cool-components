@@ -1,8 +1,7 @@
-import { Story, Meta } from "@storybook/react"
-import TwoElementsGallery, { ITwoElementsGalleryProps } from "./TwoElementsGallery"
+import { Meta, Story } from "@storybook/react"
 import { getStoryPath } from "@utils/FileUtils"
 import { baseAbsolute, file, wd } from "paths.macro"
-import style from "./TwoElementsGallery.module.scss"
+import TwoElementsGallery, { ITwoElementsGalleryProps } from "./TwoElementsGallery"
 
 export default {
     title: "Gallery/TwoElementsGallery",
@@ -31,20 +30,12 @@ Plain.args = {
 
 OnlyLeftImage.args = {
     imageLeft: "https://images.unsplash.com/photo-1626626925024-aaf056134c20?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
-    imageLeftAlt: "Man",
-    classes: {
-        leftImage: style["two-elements-gallery__only-left"]
-    }
+    imageLeftAlt: "Man"
 } as ITwoElementsGalleryProps
 
 OnlyRightImage.args = {
     imageRight: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-    imageRightAlt: "River",
-    classes: {
-        rightImage: style["two-elements-gallery__only-right"]
-    }
+    imageRightAlt: "River"
 } as ITwoElementsGalleryProps
 
-NoImages.args = {
-    className: style["two-elements-gallery__no-images"]
-} as ITwoElementsGalleryProps
+NoImages.args = {} as ITwoElementsGalleryProps
