@@ -1,20 +1,21 @@
 import classnames from "classnames"
+import IElementClassesProps from "interfaces/IElementClassesProps"
 import style from "./TwoElementsGallery.module.scss"
 
-export interface ITwoElementsGalleryProps {
+interface ITwoElementsGalleryClassesProps {
+    image?: string
+    leftImage?: string
+    rightImage?: string
+}
+export interface ITwoElementsGalleryProps extends IElementClassesProps<ITwoElementsGalleryClassesProps> {
     imageLeft?: string
     imageLeftAlt?: string
     imageRight?: string
     imageRightAlt?: string
     className?: string
-    classes?: {
-        image?: string
-        leftImage?: string
-        rightImage?: string
-    }
 }
 
-export const TwoElementsGallery: React.FC<ITwoElementsGalleryProps> = ({ imageLeft, imageRight, imageLeftAlt = "", imageRightAlt = "", className, classes }) => {
+export const TwoElementsGallery: React.FC<ITwoElementsGalleryProps> = ({ imageLeft, imageRight, imageLeftAlt = "", imageRightAlt = "", className, elementClasses }) => {
     const noImages = !imageLeft && !imageRight
 
     return (
@@ -29,8 +30,8 @@ export const TwoElementsGallery: React.FC<ITwoElementsGalleryProps> = ({ imageLe
                     src={imageLeft}
                     alt={imageLeftAlt}
                     className={classnames(
-                        classes?.image,
-                        classes?.leftImage,
+                        elementClasses?.image,
+                        elementClasses?.leftImage,
                         style["two-elements-gallery__image"],
                         style["two-elements-gallery__image-left"],
                         "two-elements-gallery__image",
@@ -44,8 +45,8 @@ export const TwoElementsGallery: React.FC<ITwoElementsGalleryProps> = ({ imageLe
                     src={imageRight}
                     alt={imageRightAlt}
                     className={classnames(
-                        classes?.image,
-                        classes?.rightImage,
+                        elementClasses?.image,
+                        elementClasses?.rightImage,
                         style["two-elements-gallery__image"],
                         style["two-elements-gallery__image-right"],
                         "two-elements-gallery__image",
