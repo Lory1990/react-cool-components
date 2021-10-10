@@ -17,7 +17,7 @@ import sass from "rollup-plugin-sass"
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
     {
-        input: ["src/index.ts", "src/inputs/index.ts", "src/cards/index.ts", "src/buttons/index.ts", "src/dialogs/index.ts", "src/popovers/index.ts"],
+        input: ["src/index.ts", "src/gallery/index.ts", "src/inputs/index.ts", "src/cards/index.ts", "src/buttons/index.ts", "src/dialogs/index.ts", "src/popovers/index.ts"],
         output: [
             {
                 dir: "dist",
