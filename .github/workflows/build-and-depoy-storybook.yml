@@ -32,8 +32,10 @@ jobs:
             - run: yarn build-storybook-test
 
             - run: yarn test
+              env:
+                  REACT_APP_USE_STORYBOOK_COMPILED: true
               continue-on-error: true
-                
+
             - run: yarn build-storybook
               env:
                   CI: true
