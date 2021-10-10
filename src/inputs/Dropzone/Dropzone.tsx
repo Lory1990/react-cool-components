@@ -1,10 +1,12 @@
 import { FormHelperText } from "@material-ui/core"
+import style from "./Dropzone.module.scss"
 import IFormProps from "interfaces/IFormProps"
+import ITooltipProps from "interfaces/ITooltipProps"
 import _ from "lodash"
 import RoundLoader from "other/RoundLoader"
 import { useState } from "react"
 import { DropEvent, FileRejection, useDropzone } from "react-dropzone"
-import ErrorAndWarningHelperText from "ui/ErrorAndWarningHelperText/ErrorAndWarningHelperText"
+import InputFieldWrapper from "ui/InputFieldWrapper/InputFieldWrapper"
 
 export interface IFileData {
     name: string
@@ -12,7 +14,7 @@ export interface IFileData {
     type: string
 }
 
-export interface IDropzoneProps extends IFormProps {
+export interface IDropzoneProps extends IFormProps, ITooltipProps {
     onDrop?: (acceptedFiles: File[], fileRejections: FileRejection[], event: DropEvent) => Promise<void>
     onLoadEnd?: (result: any, acceptedFile: File) => Promise<void>
     onUploadFile?: (acceptedFile: File) => Promise<void>
@@ -21,7 +23,7 @@ export interface IDropzoneProps extends IFormProps {
     files?: IFileData[]
 }
 
-export function Dropzone(props: IDropzoneProps) {
+export const Dropzone: React.FC<IDropzoneProps> = props => {
     const [loading, setLoading] = useState<boolean>()
     const [internalError, setInternalError] = useState<string>()
 
@@ -117,13 +119,21 @@ export function Dropzone(props: IDropzoneProps) {
     const error = props.errorMessage || internalError
 
     return (
-        <div className="dropzone">
+        <InputFieldWrapper
+            className={"className"}
+            componentClassName={"dropzone"}
+            styleClassName={style.dropzone}
+            warningMessage={props.warningMessage}
+            showWarningMessage={props.showWarningMessage}
+            errorMessage={props.errorMessage}
+            showErrorMessage={props.showErrorMessage}
+            loading={loading}
+        >
             <div {...getRootProps()} className="drop-area">
                 <input {...getInputProps()} />
                 {loading ? <RoundLoader /> : <> {isDragActive ? <p>Lasca il tuo file qui</p> : <p>Trascina gli allegati qui oppure clicca per aggiungere files</p>}</>}
             </div>
-            <ErrorAndWarningHelperText errorMessage={error} warningMessage={props.warningMessage} />
-        </div>
+        </InputFieldWrapper>
     )
 }
 
