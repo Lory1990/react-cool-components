@@ -1,25 +1,34 @@
-import { Story } from "@storybook/react"
 import ColorPicker, { IColorPickerProps } from "./ColorPicker"
+import { getStoryPath } from "@utils/FileUtils"
+import { baseAbsolute, file, wd } from "paths.macro"
+import { Meta, Story } from "@storybook/react"
 
 export default {
     title: "Inputs/ColorPicker",
-    component: ColorPicker
+    component: ColorPicker,
+    parameters: {
+        storySource: {
+            storyPath: getStoryPath(baseAbsolute, wd, file)
+        }
+    }
 }
 
 const Template = (args: IColorPickerProps) => <ColorPicker {...args} />
 
 export const Plain: Story<IColorPickerProps> = Template.bind({})
 export const Disabled: Story<IColorPickerProps> = Template.bind({})
-export const WithTooltip: Story<IColorPickerProps> = Template.bind({})
-export const WithError: Story<IColorPickerProps> = Template.bind({})
-export const WithWarning: Story<IColorPickerProps> = Template.bind({})
+export const Loading: Story<IColorPickerProps> = Template.bind({})
+export const Success: Story<IColorPickerProps> = Template.bind({})
+export const Warning: Story<IColorPickerProps> = Template.bind({})
+export const Error: Story<IColorPickerProps> = Template.bind({})
+export const Tooltip: Story<IColorPickerProps> = Template.bind({})
 
 const standardProps: IColorPickerProps = {
-    colors: ["#A0D7E7", "#A5CEA1", "#FFCE73", "#FF9A7B", "#FFA2C0"]
+    colors: ["#A0D7E7", "#A5CEA1", "#FFCE73", "#FF9A7B", "#FFA2C0"],
+    label: "This is the checkbox"
 }
 
 Plain.args = {
-    label: "This is the checkbox",
     ...standardProps
 } as IColorPickerProps
 
@@ -28,22 +37,29 @@ Disabled.args = {
     ...standardProps
 } as IColorPickerProps
 
-WithTooltip.args = {
-    label: "This is the checkbox",
+Tooltip.args = {
     ...standardProps,
     tooltip: {
         title: "This is the tooltip"
     }
 } as IColorPickerProps
 
-WithError.args = {
-    label: "This is the checkbox",
+Error.args = {
     errorMessage: "This is the error",
     ...standardProps
 } as IColorPickerProps
 
-WithWarning.args = {
-    label: "This is the checkbox",
+Warning.args = {
     errorMessage: "This is the warning",
     ...standardProps
+} as IColorPickerProps
+
+Loading.args = {
+    errorMessage: "This is the warning",
+    loading: true
+} as IColorPickerProps
+
+Success.args = {
+    errorMessage: "This is the warning",
+    success: true
 } as IColorPickerProps
