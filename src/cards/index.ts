@@ -1,7 +1,7 @@
-import LoginCard from './LoginCard'
-import SubscriptionCard from './SubscriptionCard'
+import LoginCard from "./LoginCard"
+import SubscriptionCard from "./SubscriptionCard"
 
-export default { 
+export default {
     SubscriptionCard,
     LoginCard
 }

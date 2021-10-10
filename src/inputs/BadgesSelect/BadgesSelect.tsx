@@ -1,24 +1,22 @@
-import { InputAdornment, TextField } from '@material-ui/core';
-import {Autocomplete} from '@material-ui/lab';
-import _ from 'lodash'
-import style from './BadgesSelect.module.scss'
-import Popper from "@material-ui/core/Popper";
-import Button from '@buttons/Button';
+import { InputAdornment, TextField } from "@material-ui/core"
+import { Autocomplete } from "@material-ui/lab"
+import _ from "lodash"
+import style from "./BadgesSelect.module.scss"
+import Popper from "@material-ui/core/Popper"
+import Button from "@buttons/Button"
+import IFormProps from "interfaces/IFormProps"
+import ITooltipProps from "interfaces/ITooltipProps"
 
 //https://material-ui.com/components/autocomplete/#autocomplete
 
-export interface IBadgesSelectProps{
+export interface IBadgesSelectProps extends IFormProps, ITooltipProps {}
 
-}
-
-export default function BadgesSelect(props : IBadgesSelectProps) {
-
+export default function BadgesSelect(props: IBadgesSelectProps) {
     // let { id, label, classes, disabled, value, onChange, values, autocompleteProps, placeholder, prefix } = props
 
     // const removeData = valueToRemove =>event => {
     //     props.onChange && props.onChange(event, _.filter(value, v=>v.id !== valueToRemove.id), "click-on-button")
     // }
-
 
     // const PopperMy = function (props) {
     //     return <Popper {...props} placement="bottom-start" />;
