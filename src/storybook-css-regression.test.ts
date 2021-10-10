@@ -54,8 +54,7 @@ initStoryshots({
     // asyncJest: true,
     suite: "Storyshots - CSS Regression test",
     test: imageSnapshot({
-        storybookUrl: "http://localhost:6006/",
-        //storybookUrl: `file://${path.resolve(__dirname, "../storybook-static")}`,
+        storybookUrl: Boolean(process.env.REACT_APP_USE_STORYBOOK_COMPILED) ? `file://${path.resolve(__dirname, "../storybook-static")}` : "http://localhost:6006/",
         beforeScreenshot,
         getScreenshotOptions,
         getMatchOptions,
