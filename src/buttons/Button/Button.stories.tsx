@@ -6,7 +6,7 @@ export default {
     component: Button,
 };
 
-const Template = (args : IStandardButtonProps) => <Button {...args}>Bottone</Button>;;
+const Template = (args : IStandardButtonProps) => <Button {...args}>Bottone</Button>;
   
 export const Primary : Story<IStandardButtonProps>  = Template.bind({});
 export const Secondary  : Story<IStandardButtonProps> = Template.bind({});
