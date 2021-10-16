@@ -1,50 +1,77 @@
-import { InputAdornment, TextField,FormHelperText } from '@material-ui/core';
-import {Autocomplete} from '@material-ui/lab';
-import classnames from 'classnames'
-import _ from 'lodash'
-import style from './Autocomplete.module.scss'
+import AutocompleteMui, { AutocompleteProps } from "@mui/material/Autocomplete"
+import classnames from "classnames"
+import IFormProps from "interfaces/IFormProps"
+import ITooltipProps from "interfaces/ITooltipProps"
+import InputFieldWrapper from "ui/InputFieldWrapper"
+import IElementClassesProps from "interfaces/IElementClassesProps"
+import _ from "lodash"
+import style from "./Autocomplete.module.scss"
+import TextField from "../TextInput"
 
-//https://material-ui.com/components/autocomplete/#autocomplete
-export default function AutocompleteComponent(props : any) {
-
-    return <div>WIP</div>
-
-    // let { id, label, classes, value, onChange, disabled, values, autocompleteProps, error, placeholder, prefix, multiple, className, getOptionLabel } = props
-
-    // return <div className={classnames('autocomplete', className, {error, disabled})}>
-    //     {label && <label htmlFor={id} className={'label ' + classes?.label}>{label}</label>}
-    //     <Autocomplete
-    //         multiple={multiple}
-    //         className='autocomplete'
-    //         id={id}
-    //         disabled={disabled}
-    //         options={values || []}
-    //         inputValue={props.getInputValue ? props.getInputValue() : (value?.name ||"")}
-    //         getOptionLabel={getOptionLabel && (option=>{
-    //             let label = ""
-    //             if(getOptionLabel) label = getOptionLabel(option)
-    //             return label || ""
-    //         })}
-    //         onChange={onChange}
-    //         renderInput={(params) => {
-    //             return <TextField
-    //                 {...params}
-    //                 placeholder={placeholder}
-    //                 variant='outlined'
-    //                 InputProps={{
-    //                     ...params?.InputProps,
-    //                     disableUnderline:true,
-    //                     startAdornment: prefix ? (
-    //                       <InputAdornment position="start">
-    //                             {prefix}
-    //                             {params?.InputProps.startAdornment}
-    //                       </InputAdornment>
-    //                     ) : params?.InputProps.startAdornment,
-    //                   }}
-    //             />
-    //         }}
-    //         {...autocompleteProps}
-    //     />
-    //     {error && <FormHelperText className='error-text'>{error}</FormHelperText>}
-    // </div>
+export interface IAutocompleteElementClasses {
+    label?: string
 }
+
+export interface IAutocompleteProps<T, Multiple extends boolean | undefined, DisableClearable extends boolean | undefined, FreeSolo extends boolean | undefined>
+    extends ITooltipProps,
+        IFormProps,
+        IElementClassesProps<IAutocompleteElementClasses>,
+        AutocompleteProps<T, Multiple, DisableClearable, FreeSolo> {}
+
+export function Autocomplete<T extends {}, Multiple extends boolean | undefined, DisableClearable extends boolean | undefined, FreeSolo extends boolean | undefined>({
+    id,
+    label,
+    value,
+    options,
+    onChange,
+    elementClasses,
+    className,
+    renderInput,
+    placeholder,
+    warningMessage,
+    showWarningMessage,
+    errorMessage,
+    showErrorMessage,
+    loading,
+    ...restProps
+}: IAutocompleteProps<T, Multiple, DisableClearable, FreeSolo>) {
+    // console.log("REST", restProps)
+    return (
+        <InputFieldWrapper
+            className={className}
+            componentClassName={"autocomplete"}
+            styleClassName={style.autocomplete}
+            warningMessage={warningMessage}
+            showWarningMessage={showWarningMessage}
+            errorMessage={errorMessage}
+            showErrorMessage={showErrorMessage}
+            loading={loading}
+        >
+            <AutocompleteMui
+                className={classnames("autocomplete-element", style.autocompleteElement)}
+                options={options}
+                renderInput={params => {
+                    if (renderInput) {
+                        return renderInput(params)
+                    }
+
+                    return (
+                        <TextField
+                            {...params}
+                            placeholder={placeholder}
+                            label={label}
+                            warningMessage={warningMessage}
+                            showWarningMessage={showWarningMessage}
+                            errorMessage={errorMessage}
+                            showErrorMessage={showErrorMessage}
+                            loading={loading}
+                        />
+                    )
+                }}
+                {...restProps}
+            />
+        </InputFieldWrapper>
+    )
+}
+
+export default Autocomplete
