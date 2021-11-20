@@ -14,14 +14,13 @@ const Template = (args: ISingleWorkCard) => <SingleWorkCard {...args} />
 export const Standard: Story<ISingleWorkCard> = Template.bind({})
 
 Standard.args = {
-    buttonLink : "https://github.com/Lory1990/react-cool-components",
-    buttonText : "Discover more",
-    copy : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-    imageData : {
-        imageUrl : "https://source.unsplash.com/1600x900/?nature,water",
-        title : "Paella dish"
+    buttonLink: "https://github.com/Lory1990/react-cool-components",
+    buttonText: "Discover more",
+    copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    imageData: {
+        imageUrl: "https://source.unsplash.com/1600x900/?nature,water",
+        title: "Paella dish"
     },
-    keyMap : "card0000",
-    link : "https://github.com/Lory1990/react-cool-components",
-    title : "Tongy"
+    link: "https://github.com/Lory1990/react-cool-components",
+    title: "Tongy"
 }

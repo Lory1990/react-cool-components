@@ -1,7 +1,4 @@
-export default interface ISingleWorkCard {
-
-	buttonLink: string,
-	buttonText: string,
+export interface IStandardCard {
 	copy: string;
 	imageData: {
 		imageUrl: string
@@ -9,5 +6,4 @@ export default interface ISingleWorkCard {
 	};
 	link: string;
 	title: string;
-
 }

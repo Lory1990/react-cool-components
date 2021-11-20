@@ -95,6 +95,8 @@
 	color : #02bdd5; 
 	display: -webkit-box;
 	text-decoration : none;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .card__info-excerpt {
 	-webkit-box-orient: vertical;

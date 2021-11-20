@@ -1,3 +1,70 @@
-.color {
-	color : coral;
+.card > figure {
+	margin: 0px; 
+}
+
+.card__img-wrapper {
+	overflow: hidden;
+	position : relative;
+	width : 100%; 
+}
+
+.card__img {
+	border-style: none;
+	height: 291px;
+	-webkit-transition: ease all 0.9s;
+	-moz-transition: ease all 0.9s;
+	-o-transition: ease all 0.9s;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	transition: ease all 0.9s;
+	vertical-align: middle;
+	width: auto; 
+}
+
+.card__img-animation {
+	-webkit-transform: scale(1.2) rotate(0.1deg);
+      	-moz-transform: scale(1.2) rotate(0.1deg);
+      	-ms-transform: scale(1.2) rotate(0.1deg);
+      	-o-transform: scale(1.2) rotate(0.1deg);
+      	transform: scale(1.2) rotate(0.1deg);
+}
+
+.card__info {
+	max-width: 100%;
+	padding: 20px 25px;
+}
+
+.card__info-title {
+	font-size : 24px;  
+	margin : 0;
+	padding : 0;
+}
+
+.card__info-title-excerpt {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	margin-top: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.card__info-title > a {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	color : #02bdd5; 
+	display: -webkit-box;
+	text-decoration : none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.card__info-excerpt {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	margin-top: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
