@@ -1,7 +1,11 @@
-$primaryColor: #CC006F;
-$primaryColorText: #EEE700;
-$secondaryColor: #EEE700;
-$secondaryColorText: #CC006F;
-
+$primaryColor: #cc006f;
+$primaryColorText: #eee700;
+$secondaryColor: #eee700;
+$secondaryColorText: #cc006f;
 
 $mobileWidth: "768px";
+
+:root {
+    --error-color: red;
+    --warning-color: yellow;
+}

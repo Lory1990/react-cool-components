@@ -1,13 +1,19 @@
-import * as React from "react"
 import Checkbox, { CheckboxProps } from "@material-ui/core/Checkbox"
 import FormControlLabel from "@material-ui/core/FormControlLabel"
 import classnames from "classnames"
+import IElementClassesProps from "interfaces/IElementClassesProps"
+import * as React from "react"
+import InputFieldWrapper from "ui/InputFieldWrapper/InputFieldWrapper"
 import IFormProps from "../../interfaces/IFormProps"
 import ITooltipProps from "../../interfaces/ITooltipProps"
-import InputFieldWrapper from "ui/InputFieldWrapper/InputFieldWrapper"
-// import style from './CheckBox.module.scss';
+import style from "./CheckBox.module.scss"
 
-export interface ICheckBoxProps extends IFormProps, ITooltipProps, CheckboxProps {}
+export interface ICheckBoxClasses {
+    wrapper?: string
+    checkBox?: string
+}
+
+export interface ICheckBoxProps extends IFormProps, ITooltipProps, IElementClassesProps<ICheckBoxClasses>, CheckboxProps {}
 
 export function CheckboxComponent({
     onChange,
@@ -23,7 +29,8 @@ export function CheckboxComponent({
     success,
     showWarningMessage,
     showErrorMessage,
-    loading
+    loading,
+    elementClasses
 }: ICheckBoxProps) {
     const style = {} as any
     return (
@@ -36,12 +43,15 @@ export function CheckboxComponent({
             errorMessage={errorMessage}
             showErrorMessage={showErrorMessage}
             loading={loading}
+            readOnly={readOnly}
+            success={success}
+            disabled={disabled}
         >
             <FormControlLabel
-                className={classnames(style.checkbox, className, { disabled, errorMessage, warningMessage, readOnly, success })}
+                className={classnames(style.checkbox, className, elementClasses?.wrapper)}
                 control={
                     <>
-                        <Checkbox checked={Boolean(value)} onChange={onChange} id={id} name={name} disabled={disabled} />
+                        <Checkbox className={classnames("checkbox", elementClasses?.checkBox, style.checkBox)} checked={Boolean(value)} onChange={onChange} id={id} name={name} disabled={disabled} />
                     </>
                 }
                 disabled={disabled}
