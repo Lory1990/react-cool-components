@@ -21,6 +21,7 @@ export const Success: Story<ICheckBoxProps> = Template.bind({})
 export const Loading: Story<ICheckBoxProps> = Template.bind({})
 export const Warning: Story<ICheckBoxProps> = Template.bind({})
 export const Error: Story<ICheckBoxProps> = Template.bind({})
+export const ReadOnly: Story<ICheckBoxProps> = Template.bind({})
 export const Tooltip: Story<ICheckBoxProps> = Template.bind({})
 
 Plain.args = {
@@ -30,6 +31,11 @@ Plain.args = {
 Disabled.args = {
     ...Plain.args,
     disabled: true
+}
+
+ReadOnly.args = {
+    ...Plain.args,
+    readOnly: true
 }
 
 Warning.args = {

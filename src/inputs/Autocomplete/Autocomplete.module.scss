@@ -1,21 +1,19 @@
-@import '../../style/variables.scss';
-
-.autocomplete{
+.autocomplete {
     display: flex;
     flex-direction: column;
-    >label{
-        color:black;
+    > label {
+        color: black;
         font-weight: 600;
         margin-bottom: 10px;
     }
-    .MuiOutlinedInput-root{
-        fieldset{
-            border: 2px solid $primaryColor;
+    .MuiOutlinedInput-root {
+        fieldset {
+            border: 2px solid var(--primary-color);
             border-radius: 8px;
         }
     }
-    &.error{
-        fieldset{
+    &.error {
+        fieldset {
             border-color: red;
         }
     }

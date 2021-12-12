@@ -1,12 +1,11 @@
-
-.buttonArray{
-    .buttonArrayItem{
-        &:not(:last-of-type){
+.buttonArray {
+    .buttonArrayItem {
+        &:not(:last-of-type) {
             margin-right: 15px;
         }
-        &.selected{
-            background-color: $primaryColor;
-            color: $primaryColorText;
+        &.selected {
+            background-color: var(--primary-color);
+            color: var(--primary-color-text);
         }
     }
 }

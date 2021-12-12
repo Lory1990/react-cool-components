@@ -15,7 +15,7 @@ export interface ICheckBoxClasses {
 
 export interface ICheckBoxProps extends IFormProps, ITooltipProps, IElementClassesProps<ICheckBoxClasses>, CheckboxProps {}
 
-export function CheckboxComponent({
+export const CheckboxComponent: React.FC<ICheckBoxProps> = ({
     onChange,
     id,
     disabled,
@@ -31,8 +31,7 @@ export function CheckboxComponent({
     showErrorMessage,
     loading,
     elementClasses
-}: ICheckBoxProps) {
-    const style = {} as any
+}: ICheckBoxProps) => {
     return (
         <InputFieldWrapper
             className={className}
@@ -48,10 +47,18 @@ export function CheckboxComponent({
             disabled={disabled}
         >
             <FormControlLabel
-                className={classnames(style.checkbox, className, elementClasses?.wrapper)}
+                className={classnames("check-box-form-control", style.checkbox, className, elementClasses?.wrapper)}
                 control={
                     <>
-                        <Checkbox className={classnames("checkbox", elementClasses?.checkBox, style.checkBox)} checked={Boolean(value)} onChange={onChange} id={id} name={name} disabled={disabled} />
+                        <Checkbox
+                            className={classnames("checkbox", elementClasses?.checkBox, style.checkBox)}
+                            checked={Boolean(value)}
+                            onChange={onChange}
+                            readOnly={readOnly}
+                            id={id}
+                            name={name}
+                            disabled={disabled}
+                        />
                     </>
                 }
                 disabled={disabled}

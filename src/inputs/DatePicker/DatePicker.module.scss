@@ -10,21 +10,21 @@
     }
 
     fieldset {
-        border: 2px solid $primaryColor;
+        border: 2px solid var(--primary-color);
         border-radius: 8px;
     }
 
-    svg{
-        fill: $primaryColor;
+    svg {
+        fill: var(--primary-color);
     }
 
-    &:hover{
+    &:hover {
         fieldset {
-            border-color: $secondaryColor !important;
-        }   
+            border-color: var(--secondary-color) !important;
+        }
 
-        svg{
-            fill: $secondaryColor;
+        svg {
+            fill: var(--secondary-color);
         }
     }
 }
