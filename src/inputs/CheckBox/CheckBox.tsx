@@ -51,7 +51,7 @@ export const CheckboxComponent: React.FC<ICheckBoxProps> = ({
                 control={
                     <>
                         <Checkbox
-                            className={classnames("checkbox", elementClasses?.checkBox, style.checkBox)}
+                            className={classnames("check-box", elementClasses?.checkBox, style.checkBox)}
                             checked={Boolean(value)}
                             onChange={onChange}
                             readOnly={readOnly}

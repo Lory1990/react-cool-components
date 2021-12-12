@@ -1,24 +1,25 @@
-import { useField, useFormikContext } from 'formik';
-import React from "react";
-import ColorPicker, { IColorPickerProps } from "./ColorPicker";
+import { useField, useFormikContext } from "formik"
+import React from "react"
+import ColorPicker, { IColorPickerProps } from "./ColorPicker"
 
-export interface IColorPickerFormikProps extends IColorPickerProps{
-    name: string,
+export interface IColorPickerFormikProps extends IColorPickerProps {
+    name: string
 }
 
-export default function ColorPickerFormik(props : IColorPickerFormikProps){
-
-    const [field, meta, helpers] = useField(props.name);
+export default function ColorPickerFormik(props: IColorPickerFormikProps) {
+    const [field, meta, helpers] = useField(props.name)
     const { isSubmitting } = useFormikContext()
 
-    return <ColorPicker
-        {...meta}
-        {...props}
-        value={field.value ? field.value : undefined }
-        disabled={isSubmitting || props.disabled}
-        onChange={(color)=>{
-            helpers.setValue("#"+color.hex)
-            if(props.onChange) props.onChange(color)
-        }}
-    />
+    return (
+        <ColorPicker
+            {...props}
+            errorMessage={meta.error || props.errorMessage}
+            value={field.value ? field.value : undefined}
+            disabled={isSubmitting || props.disabled}
+            onChange={color => {
+                helpers.setValue("#" + color.hex)
+                if (props.onChange) props.onChange(color)
+            }}
+        />
+    )
 }

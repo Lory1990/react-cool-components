@@ -33,6 +33,9 @@ export function Autocomplete<T extends {}, Multiple extends boolean | undefined,
     errorMessage,
     showErrorMessage,
     loading,
+    disabled,
+    readOnly,
+    success,
     ...restProps
 }: IAutocompleteProps<T, Multiple, DisableClearable, FreeSolo>) {
     // console.log("REST", restProps)
@@ -45,28 +48,19 @@ export function Autocomplete<T extends {}, Multiple extends boolean | undefined,
             showWarningMessage={showWarningMessage}
             errorMessage={errorMessage}
             showErrorMessage={showErrorMessage}
-            loading={loading}
+            disabled={disabled}
+            readOnly={readOnly}
         >
             <AutocompleteMui
                 className={classnames("autocomplete-element", style.autocompleteElement)}
                 options={options}
+                disabled={disabled}
                 renderInput={params => {
                     if (renderInput) {
                         return renderInput(params)
                     }
 
-                    return (
-                        <TextField
-                            {...params}
-                            placeholder={placeholder}
-                            label={label}
-                            warningMessage={warningMessage}
-                            showWarningMessage={showWarningMessage}
-                            errorMessage={errorMessage}
-                            showErrorMessage={showErrorMessage}
-                            loading={loading}
-                        />
-                    )
+                    return <TextField {...params} placeholder={placeholder} label={label} disabled={disabled} readOnly={readOnly} success={success} loading={loading} />
                 }}
                 {...restProps}
             />

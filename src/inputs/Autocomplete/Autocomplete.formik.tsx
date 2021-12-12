@@ -1,11 +1,9 @@
-import { useField, useFormikContext } from 'formik';
-import React from "react";
-import _ from 'lodash'
-import Autocomplete from './Autocomplete';
+import { useField, useFormikContext } from "formik"
+import React from "react"
+import _ from "lodash"
+import Autocomplete from "./Autocomplete"
 
-
-export default function AutocompleteFormik(props : any){
-
+export default function AutocompleteFormik(props: any) {
     return <div>aAA</div>
 
     // const [field, meta, helpers] = useField(props.name);
@@ -18,13 +16,14 @@ export default function AutocompleteFormik(props : any){
     //     }else{
     //         if(!field.value) return undefined
     //         return props.values?.find(value => field.value === value.id)
-    //     }        
+    //     }
     // }
 
     // return <Autocomplete
     //     {...meta}
     //     {...props}
     //     name={props.name}
+    //     errorMessage={meta.error || props.errorMessage}
     //     value={getValue()}
     //     disabled={isSubmitting || props.disabled}
     //     onChange={(event, value, reason)=>{

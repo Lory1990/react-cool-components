@@ -6,7 +6,7 @@ import "../src/style/index.scss"
 const workingDirPath = wd ? `/${wd}` : "/"
 
 export const parameters = {
-    actions: { argTypesRegex: "^on[A-Z]*" },
+    // actions: { argTypesRegex: "^on[A-Z]*" },
     layout: "centered",
     controls: {
         matchers: {
