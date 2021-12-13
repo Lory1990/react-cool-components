@@ -10,7 +10,7 @@
     }
     .MuiOutlinedInput-root {
         fieldset {
-            border: 2px solid $primaryColor;
+            border: 2px solid var(--primary-color);
             border-radius: 8px;
         }
     }

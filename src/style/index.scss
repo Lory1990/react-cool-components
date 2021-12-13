@@ -1,7 +1,15 @@
+@import "./fonts.scss";
 
-@import  './variables.scss';
-@import  './fonts.scss';
+* {
+    font-family: "Roboto";
+}
 
-*{
-    font-family: 'Roboto';
+:root {
+    --error-color: red;
+    --warning-color: #edef00;
+    --primary-color: #cc006f;
+    --primary-color-text: #eee700;
+    --secondary-color: #eee700;
+    --secondary-color-text: #cc006f;
+    --mobile-max-width: 768px;
 }

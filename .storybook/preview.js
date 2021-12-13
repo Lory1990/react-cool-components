@@ -1,10 +1,12 @@
 import { Suspense, StrictMode } from "react"
 import { wd } from "paths.macro"
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport"
+import "../src/style/index.scss"
 
 const workingDirPath = wd ? `/${wd}` : "/"
 
 export const parameters = {
-    actions: { argTypesRegex: "^on[A-Z]*" },
+    // actions: { argTypesRegex: "^on[A-Z]*" },
     layout: "centered",
     controls: {
         matchers: {
@@ -16,6 +18,9 @@ export const parameters = {
         repository: "https://github.com/Lory1990/react-cool-components",
         branch: "main",
         workingDir: workingDirPath
+    },
+    viewport: {
+        viewports: INITIAL_VIEWPORTS
     }
 }
 

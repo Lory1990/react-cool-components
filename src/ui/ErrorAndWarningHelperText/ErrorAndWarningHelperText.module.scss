@@ -1,0 +1,42 @@
+.errorText {
+    .icon {
+        fill: var(--error-color);
+    }
+}
+
+.warningText {
+    .icon {
+        fill: var(--warning-color);
+    }
+}
+
+.errorAndWarningHelperText {
+    position: relative;
+    overflow-y: hidden;
+}
+
+.messageText {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow-y: hidden;
+    & :local {
+        animation: slideIn 1s ease;
+    }
+
+    .icon {
+        height: 16px;
+        width: 16px;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-16px) rotateX(-90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) rotateX(0);
+        opacity: 100%;
+    }
+}

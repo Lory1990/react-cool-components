@@ -21,6 +21,7 @@ export const Loading: Story<IColorPickerProps> = Template.bind({})
 export const Success: Story<IColorPickerProps> = Template.bind({})
 export const Warning: Story<IColorPickerProps> = Template.bind({})
 export const Error: Story<IColorPickerProps> = Template.bind({})
+export const ReadOnly: Story<IColorPickerProps> = Template.bind({})
 export const Tooltip: Story<IColorPickerProps> = Template.bind({})
 
 const standardProps: IColorPickerProps = {
@@ -55,11 +56,16 @@ Warning.args = {
 } as IColorPickerProps
 
 Loading.args = {
-    errorMessage: "This is the warning",
+    ...standardProps,
     loading: true
 } as IColorPickerProps
 
 Success.args = {
-    errorMessage: "This is the warning",
+    ...standardProps,
     success: true
+} as IColorPickerProps
+
+ReadOnly.args = {
+    ...standardProps,
+    readOnly: true
 } as IColorPickerProps

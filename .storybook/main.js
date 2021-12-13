@@ -21,17 +21,7 @@ module.exports = {
 
         config.module.rules.push({
             test: /\.s[ac]ss$/i,
-            use: [
-                // 'style-loader',
-                // 'css-loader',
-                "sass-loader",
-                {
-                    loader: "sass-resources-loader",
-                    options: {
-                        resources: [path.resolve(__dirname, "../src/style/index.scss")]
-                    }
-                }
-            ]
+            use: ["sass-loader"]
         })
 
         if (process.env.NODE_ENV === "production" && !process.env.IS_TEST) {
