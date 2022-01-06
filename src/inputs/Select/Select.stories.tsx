@@ -1,6 +1,6 @@
 import Select, { ISelectComponentProps } from "./Select"
 import { Meta, Story } from "@storybook/react"
-import { getStoryPath } from "utils/FileUtils"
+import { getStoryPath } from "../../utils/FileUtils"
 import { baseAbsolute, file, wd } from "paths.macro"
 
 export default {
