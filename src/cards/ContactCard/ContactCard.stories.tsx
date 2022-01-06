@@ -16,5 +16,9 @@ export default {
 const Template = (args: IContactCardProps) => <ContactCard {...args} />
 
 export const Plain: Story<IContactCardProps> = Template.bind({})
+export const Loading: Story<IContactCardProps> = Template.bind({})
 
 Plain.args = {} as IContactCardProps
+Loading.args = {
+    loading: true
+} as IContactCardProps

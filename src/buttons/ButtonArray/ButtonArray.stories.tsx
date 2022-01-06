@@ -47,17 +47,17 @@ Disabled.args = {
 
 SelectedString.args = {
     buttons,
-    selected: "a"
+    value: "a"
 } as IButtonArrayProps
 
 SelectedArray.args = {
     buttons,
-    selected: ["a", "b"]
+    value: ["a", "b"]
 } as IButtonArrayProps
 
 SelectedFunction.args = {
     buttons,
-    selected: button => button.id === "c"
+    value: button => button.id === "c"
 } as IButtonArrayProps
 
 DisabledString.args = {
