@@ -11,25 +11,25 @@ export interface IButtonData {
 }
 
 export interface IButtonArrayProps extends IFormProps {
-    selected: string | string[] | ((button: IButtonData) => boolean)
-    disabledButton: string | string[] | ((button: IButtonData) => boolean)
-    setSelected: (button: IButtonData, isSelected: boolean, event: MouseEvent<HTMLButtonElement, any>) => void
+    value?: string | string[] | ((button: IButtonData) => boolean)
+    onChange?: (button: IButtonData, isSelected: boolean, event: MouseEvent<HTMLButtonElement, any>) => void
+    disabledButton?: string | string[] | ((button: IButtonData) => boolean)
     buttons: IButtonData[]
 }
 
-export function ButtonArray({ selected, setSelected, buttons, disabled, disabledButton }: IButtonArrayProps) {
-    const setSelectedButton = (button: IButtonData, isSelected: boolean) => (event: MouseEvent<HTMLButtonElement, any>) => {
-        setSelected?.(button, !isSelected, event)
+export function ButtonArray({ value, onChange, buttons, disabled, disabledButton }: IButtonArrayProps) {
+    const onClickOnButton = (button: IButtonData, isSelected: boolean) => (event: MouseEvent<HTMLButtonElement, any>) => {
+        onChange?.(button, !isSelected, event)
     }
 
     const checkSelection = (button: IButtonData): boolean => {
-        if (!button || !selected) return false
-        if (Array.isArray(selected)) {
-            return selected.includes(button.id)
-        } else if (typeof selected === "string") {
-            return selected === button.id
+        if (!button || !value) return false
+        if (Array.isArray(value)) {
+            return value.includes(button.id)
+        } else if (typeof value === "string") {
+            return value === button.id
         } else {
-            return selected(button)
+            return value(button)
         }
     }
 
@@ -54,7 +54,7 @@ export function ButtonArray({ selected, setSelected, buttons, disabled, disabled
                         key={index}
                         disabled={disabled || isDisabled}
                         className={classnames("button-array-item", style.buttonArrayItem, { [style.selected + " selected"]: isSelected })}
-                        onClick={setSelectedButton(button, isSelected)}
+                        onClick={onClickOnButton(button, isSelected)}
                     >
                         {button.label}
                     </Button>

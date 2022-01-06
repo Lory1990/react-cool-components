@@ -1,0 +1,150 @@
+/* BODY STRUCTURE */
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans';
+  color:#000000;
+  background-color:hsl(273, 75%, 66%);
+}
+
+.main-big-container {
+  display: flex;
+  align-content: center;
+  width:900px;
+  height:500px;
+  margin:auto;
+  position: relative;
+  flex-direction: row;
+  top:100px;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 7px 14px 3px #000000; 
+box-shadow: 5px 7px 14px 3px #000000;
+
+}
+
+/* LEFT CONTAINER */
+
+.left-container{
+  width:450px;
+  background-color: #ffffff;
+  
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+
+/* svg image */
+
+.image {
+  position:relative;
+  top:50px;
+  right:20px;
+  transform: scale(0.8);
+  }
+
+
+/* RIGHT CONTAINER */
+
+.right-container{
+  width:450px;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #ffffff;
+}
+.faq {
+  margin-left: 18px;
+}
+
+.question-container {
+  margin-left:20px;
+}
+
+/* DETAILS / ACCORDION */
+
+details {
+  width:300px;
+  padding-bottom:5px;
+  border-bottom: 1px solid lightgrey;
+}
+
+/* to remove the default arrow of the details tag */
+details > summary {
+  list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+
+/* adding a + sign after the accordion when it is closed */
+details > summary::after {
+  content: '+';
+  float:right;
+}
+
+/* changing the plus into a minus after opening it (clicking on it) */
+details[open] > summary::after {
+  content: '-';
+  float:right;
+  color: #000000;
+}
+
+/* changing the font weight to bold to hightlight only the question */
+details[open] > summary {
+  font-weight: 900;
+}
+
+
+.accordion {
+  margin-top:30px;
+}
+
+
+
+.questions {
+  margin-top: 20px;
+}
+
+
+/* MEDIA QUERIES - to use only if necessary*/ 
+
+@media only screen and (max-width: 700px) {
+body {
+  height:130vh;
+}
+
+.main-big-container {
+  flex-direction: column;
+  height:110vh;
+  width: 450px;
+  -webkit-box-shadow: 5px 80 14px 3px #000000; 
+  box-shadow: 5px 8 0px 14px 3px #000000;
+}
+
+.left-container {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius:15px;
+}
+
+.right-container {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  height:110vh;
+  display: flex;
+  align-items: center;
+  margin:auto;
+}
+
+.image {
+  position:relative;
+  top:20px;
+  right:20px;
+  transform: scale(0.6);
+  }
+}

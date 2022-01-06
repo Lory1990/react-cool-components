@@ -6,26 +6,8 @@ button.standardButton {
         size: 14px;
     }
 
-    // background: var(--primary-color);
-    // border: 2px solid var(--primary-color);
-    // color: var(--secondary-color);
     padding: 5px 18px;
-    // // text-align: center;
-    // font-size: 18px;
-    // font-weight: bold;
     border-radius: 7px;
-    // box-shadow: -10px 20px 15px -10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     text-transform: uppercase;
-}
-
-button.black-button {
-    background-color: #1b1d21;
-    span.MuiButton-label {
-        color: white;
-    }
-
-    &:hover {
-        background-color: lighten(#1b1d21, 20%);
-    }
 }

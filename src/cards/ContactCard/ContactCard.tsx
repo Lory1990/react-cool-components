@@ -13,6 +13,7 @@ export interface IContactCardProps {
     onSubmit?: (values: IContactDTO) => Promise<void>
     onSuccess?: (values: IContactDTO) => void
     onError?: (error: any) => void
+    loading?: boolean
     emailJsParams?: {
         serviceId?: string
         templateId?: string
@@ -20,7 +21,7 @@ export interface IContactCardProps {
     }
 }
 
-export const ContactCard: React.FC<IContactCardProps> = ({ onError, className, onSuccess, emailJsParams, ...props }) => {
+export const ContactCard: React.FC<IContactCardProps> = ({ onError, className, onSuccess, loading: loadingProps, emailJsParams, ...props }) => {
     const [loading, setLoading] = useState<boolean>(false)
     const [success, setSuccess] = useState<boolean>(false)
 
@@ -74,12 +75,12 @@ export const ContactCard: React.FC<IContactCardProps> = ({ onError, className, o
                     />
                 </div>
                 <div className={classnames(style.btnContainer, "button-container")}>
-                    {loading ? (
+                    {loading || loadingProps ? (
                         <RoundLoader />
                     ) : success ? (
                         <div>Success</div>
                     ) : (
-                        <Button type="submit" className={classnames(style.contactBtn, "submit-button")}>
+                        <Button color="primary" variant="contained" type="submit" className={classnames(style.contactBtn, "submit-button")}>
                             Submit!
                         </Button>
                     )}
