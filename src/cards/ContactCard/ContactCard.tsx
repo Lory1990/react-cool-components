@@ -58,12 +58,12 @@ export const ContactCard: React.FC<IContactCardProps> = ({ onError, className, o
         <Formik onSubmit={onSubmit} initialValues={{} as IContactDTO}>
             <Form className={classnames(className, style.contactCard, "contact-form")}>
                 <div className={classnames(style.contactFields, "contact-fields")}>
-                    <TextField className={classnames(style.contactSingleField, "single-field")} name="name" label="Name" variant="outlined" disabled={loading} />
+                    <TextField className={classnames(style.contactSingleField, "single-field field-name")} name="name" label="Name" variant="outlined" disabled={loading} />
 
-                    <TextField className={classnames(style.contactSingleField, "single-field")} label="Email" variant="outlined" name="email" type="email" disabled={loading} />
+                    <TextField className={classnames(style.contactSingleField, "single-field field-email")} label="Email" variant="outlined" name="email" type="email" disabled={loading} />
 
                     <TextField
-                        className={classnames(style.contactSingleField, "single-field")}
+                        className={classnames(style.contactSingleField, "single-field field-message")}
                         id="contact-form-message"
                         name="message"
                         type="text"
